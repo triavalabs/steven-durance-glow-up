@@ -1,9 +1,7 @@
 import stevenProfessional from "@/assets/steven-professional.png";
 import stevenDuranceLogo from "@/assets/stevendurance-logo.png";
-
 const StevensStorySection = () => {
-  return (
-    <section className="pt-16 pb-24 bg-background">
+  return <section className="pt-16 pb-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -13,23 +11,15 @@ const StevensStorySection = () => {
                 {/* Background Design */}
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-primary/5 to-accent/20 rounded-2xl" />
                 <div className="absolute top-4 right-4 opacity-5 w-32 h-32">
-                  <img 
-                    src={stevenDuranceLogo} 
-                    alt="StevenDurance Logo" 
-                    className="w-full h-full object-contain"
-                  />
+                  <img src={stevenDuranceLogo} alt="StevenDurance Logo" className="w-full h-full object-contain" />
                 </div>
                 
                 {/* Geometric Accent Elements */}
                 <div className="absolute bottom-12 right-12 w-16 h-16 bg-primary/15 rounded-lg rotate-45" />
                 
                 {/* Professional Photo */}
-                <div className="relative pt-6 pb-6 px-6">
-                  <img 
-                    src={stevenProfessional} 
-                    alt="Steven - Professional Fitness Coach" 
-                    className="w-full rounded-xl shadow-[var(--shadow-hero)] border-2 border-accent/20"
-                  />
+                <div className="relative pt-6 pb-6 mx-0 my-0 px-[21px] py-[4px]">
+                  <img src={stevenProfessional} alt="Steven - Professional Fitness Coach" className="w-full rounded-xl shadow-[var(--shadow-hero)] border-2 border-accent/20" />
                   <div className="absolute inset-6 bg-gradient-to-t from-background/20 to-transparent rounded-xl pointer-events-none" />
                 </div>
               </div>
@@ -88,8 +78,6 @@ const StevensStorySection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default StevensStorySection;
