@@ -43,17 +43,16 @@ const HeroSection = () => {
           
           {/* Video Section */}
           <div className="relative mb-12 max-w-2xl mx-auto animate-scale-in">
-            <div className="relative aspect-video bg-gradient-card rounded-2xl p-1 shadow-[var(--shadow-hero)]">
-              <div className="w-full h-full bg-secondary rounded-xl flex items-center justify-center group cursor-pointer hover:bg-secondary/80 transition-colors">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform">
-                    <Play className="w-8 h-8 text-accent-foreground ml-1" />
-                  </div>
-                  <p className="text-foreground font-semibold text-lg">Watch Steven's Message</p>
-                  <p className="text-muted-foreground text-sm">Click to play the video</p>
-                </div>
-              </div>
-            </div>
+          <div className="relative aspect-video bg-gradient-card rounded-2xl p-1 shadow-[var(--shadow-hero)]">
+            <iframe
+              className="w-full h-full rounded-xl"
+              src="https://www.youtube.com/embed/4GjOqOoKR48?start=17&autoplay=0&rel=0&modestbranding=1"
+              title="Steven's Strategy Call Message"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
           </div>
           
           {/* CTAs */}
