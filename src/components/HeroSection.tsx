@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Play, Rocket, Phone } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import stevenLogo from "@/assets/stevendurance-logo.png";
 
 const HeroSection = () => {
   return (
@@ -16,6 +17,15 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-20 container mx-auto px-6 text-center">
+        {/* Logo */}
+        <div className="absolute top-8 left-8 z-30 animate-fade-in">
+          <img 
+            src={stevenLogo} 
+            alt="StevenDurance Logo" 
+            className="w-16 h-16 md:w-20 md:h-20"
+          />
+        </div>
+        
         <div className="max-w-4xl mx-auto animate-fade-in-up">
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
