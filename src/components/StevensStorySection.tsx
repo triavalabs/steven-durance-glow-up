@@ -3,7 +3,7 @@ import stevenDuranceLogo from "@/assets/stevendurance-logo.png";
 
 const StevensStorySection = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="pt-16 pb-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -21,11 +21,10 @@ const StevensStorySection = () => {
                 </div>
                 
                 {/* Geometric Accent Elements */}
-                <div className="absolute top-8 left-8 w-20 h-20 bg-accent/10 rounded-full blur-xl" />
                 <div className="absolute bottom-12 right-12 w-16 h-16 bg-primary/15 rounded-lg rotate-45" />
                 
                 {/* Professional Photo */}
-                <div className="relative pb-6 px-6">
+                <div className="relative pt-6 pb-6 px-6">
                   <img 
                     src={stevenProfessional} 
                     alt="Steven - Professional Fitness Coach" 
