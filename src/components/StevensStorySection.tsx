@@ -19,7 +19,11 @@ const StevensStorySection = () => {
                 
                 {/* Professional Photo */}
                 <div className="relative pt-6 pb-6 mx-0 my-0 px-[21px] py-[4px]">
-                  <img src={stevenProfessional} alt="Steven - Professional Fitness Coach" className="w-full rounded-xl shadow-[var(--shadow-hero)] border-2 border-accent/20" />
+                  {/* Glow Effect Behind Image */}
+                  <div className="absolute inset-0 bg-accent/20 blur-2xl rounded-2xl" />
+                  <div className="absolute inset-2 bg-accent/10 blur-xl rounded-xl" />
+                  
+                  <img src={stevenProfessional} alt="Steven - Professional Fitness Coach" className="relative w-full rounded-xl shadow-[var(--shadow-hero)] border-2 border-accent/20" />
                   <div className="absolute inset-6 bg-gradient-to-t from-background/20 to-transparent rounded-xl pointer-events-none" />
                 </div>
               </div>
