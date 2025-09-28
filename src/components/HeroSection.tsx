@@ -18,20 +18,20 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-20 container mx-auto px-6 text-center">
         {/* Logo */}
-        <div className="absolute top-4 left-4 md:top-8 md:left-8 z-30 animate-fade-in">
-          <div className="backdrop-blur-sm bg-background/10 rounded-lg p-2 md:p-3">
+        <div className="absolute top-2 right-4 md:top-8 md:left-8 z-30 animate-fade-in">
+          <div className="backdrop-blur-sm bg-background/10 rounded-lg p-1 md:p-3">
             <img 
               src={stevenLogo} 
               alt="StevenDurance Logo" 
-              className="w-12 h-12 md:w-20 md:h-20 opacity-90 hover:opacity-100 transition-opacity duration-300"
+              className="w-10 h-10 md:w-20 md:h-20 opacity-90 hover:opacity-100 transition-opacity duration-300"
             />
           </div>
         </div>
         
-        <div className="max-w-4xl mx-auto animate-fade-in-up">
+        <div className="max-w-4xl mx-auto animate-fade-in-up pt-16 md:pt-0">
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
-            <span className="text-foreground">Congratulations —</span>
+          <h1 className="text-3xl md:text-7xl font-black mb-6 leading-tight">
+            <span className="text-foreground">You're In —</span>
             <br />
             <span className="bg-gradient-accent bg-clip-text text-transparent">
               Your Free Six-Pack Strategy Call Is Confirmed
