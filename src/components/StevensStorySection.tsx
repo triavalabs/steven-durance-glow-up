@@ -25,7 +25,7 @@ const StevensStorySection = () => {
                 <div className="absolute bottom-12 right-12 w-16 h-16 bg-primary/15 rounded-lg rotate-45" />
                 
                 {/* Professional Photo */}
-                <div className="relative p-6">
+                <div className="relative pb-6 px-6">
                   <img 
                     src={stevenProfessional} 
                     alt="Steven - Professional Fitness Coach" 
