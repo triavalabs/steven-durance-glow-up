@@ -1,4 +1,5 @@
-import transformationSplit from "@/assets/transformation-split.jpg";
+import stevenProfessional from "@/assets/steven-professional.png";
+import stevenDuranceLogo from "@/assets/stevendurance-logo.png";
 
 const StevensStorySection = () => {
   return (
@@ -9,12 +10,29 @@ const StevensStorySection = () => {
             {/* Image Side */}
             <div className="relative animate-scale-in">
               <div className="relative">
-                <img 
-                  src={transformationSplit} 
-                  alt="Steven's transformation journey" 
-                  className="w-full rounded-2xl shadow-[var(--shadow-hero)]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent rounded-2xl" />
+                {/* Background Design */}
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-primary/5 to-accent/20 rounded-2xl" />
+                <div className="absolute top-4 right-4 opacity-5 w-32 h-32">
+                  <img 
+                    src={stevenDuranceLogo} 
+                    alt="StevenDurance Logo" 
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                
+                {/* Geometric Accent Elements */}
+                <div className="absolute top-8 left-8 w-20 h-20 bg-accent/10 rounded-full blur-xl" />
+                <div className="absolute bottom-12 right-12 w-16 h-16 bg-primary/15 rounded-lg rotate-45" />
+                
+                {/* Professional Photo */}
+                <div className="relative p-6">
+                  <img 
+                    src={stevenProfessional} 
+                    alt="Steven - Professional Fitness Coach" 
+                    className="w-full rounded-xl shadow-[var(--shadow-hero)] border-2 border-accent/20"
+                  />
+                  <div className="absolute inset-6 bg-gradient-to-t from-background/20 to-transparent rounded-xl pointer-events-none" />
+                </div>
               </div>
             </div>
             
