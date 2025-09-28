@@ -29,10 +29,10 @@ const WhatYoullLearnSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            What You'll Learn from the Video
+            What You'll Discover on Your Call
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            In this strategy session, Steven breaks down exactly how to transform your body and mindset.
+            During your personalized strategy session, Steven will help you uncover exactly what's needed to transform your body and mindset.
           </p>
         </div>
         
