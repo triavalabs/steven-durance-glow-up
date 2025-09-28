@@ -45,13 +45,30 @@ const HeroSection = () => {
           <div className="relative mb-12 max-w-2xl mx-auto animate-scale-in">
           <div className="relative aspect-video bg-gradient-card rounded-2xl p-1 shadow-[var(--shadow-hero)]">
             <iframe
+              id="youtube-video"
               className="w-full h-full rounded-xl"
-              src="https://www.youtube.com/embed/4GjOqOoKR48?start=17&autoplay=0&rel=0&modestbranding=1"
+              src="https://www.youtube.com/embed/4GjOqOoKR48?start=17&autoplay=0&rel=0&modestbranding=1&enablejsapi=1"
               title="Steven's Strategy Call Message"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
+            
+            {/* Custom Play Button Overlay */}
+            <div 
+              className="absolute inset-0 bg-black/30 rounded-xl flex items-center justify-center cursor-pointer group hover:bg-black/40 transition-all duration-300"
+              onClick={() => {
+                const iframe = document.getElementById('youtube-video') as HTMLIFrameElement;
+                if (iframe) {
+                  iframe.src = iframe.src.replace('autoplay=0', 'autoplay=1');
+                  (iframe.parentNode as HTMLElement).querySelector('.absolute.inset-0')?.remove();
+                }
+              }}
+            >
+              <div className="w-20 h-20 md:w-24 md:h-24 bg-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg">
+                <Play className="w-8 h-8 md:w-10 md:h-10 text-accent-foreground ml-1" />
+              </div>
+            </div>
           </div>
           </div>
           
