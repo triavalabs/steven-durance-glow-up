@@ -28,8 +28,8 @@ const WhatYoullLearnSection = () => {
   return (
     <section className="pt-24 pb-8 bg-background">
       <div className="container mx-auto px-6">
-        <div className="border-2 border-red-500 rounded-3xl p-8 bg-gradient-card">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="border-2 border-red-500 rounded-3xl bg-gradient-card overflow-hidden">
+          <div className="grid lg:grid-cols-2 gap-12 items-end p-8 pb-0">
             <div className="animate-fade-in-up">
               <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
                 THIS COACHING PROGRAM IS
@@ -39,11 +39,11 @@ const WhatYoullLearnSection = () => {
                 </span>
               </h2>
             </div>
-            <div className="animate-scale-in" style={{ animationDelay: "0.2s" }}>
+            <div className="animate-scale-in self-end" style={{ animationDelay: "0.2s" }}>
               <img 
                 src={athleticBodyImage} 
                 alt="Athletic transformation result showing muscular physique"
-                className="w-full max-w-md mx-auto rounded-2xl shadow-[var(--shadow-hero)] hover:shadow-[var(--shadow-card)] hover:scale-105 transition-all duration-300"
+                className="w-full max-w-md mx-auto rounded-t-2xl shadow-[var(--shadow-hero)] hover:shadow-[var(--shadow-card)] hover:scale-105 transition-all duration-300"
               />
             </div>
           </div>
