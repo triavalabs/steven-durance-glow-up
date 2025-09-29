@@ -1,4 +1,5 @@
 import { Target, Zap, MapPin, Heart } from "lucide-react";
+import athleticBodyImage from "@/assets/athletic-body-result.png";
 
 const learningPoints = [
   {
@@ -27,14 +28,23 @@ const WhatYoullLearnSection = () => {
   return (
     <section className="pt-24 pb-8 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            THIS COACHING PROGRAM IS
-            <br />
-            <span className="bg-gradient-accent bg-clip-text text-transparent">
-              THE FASTEST WAY TO THE ATHLETIC BODY YOU'VE ALWAYS WANTED!
-            </span>
-          </h2>
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="animate-fade-in-up">
+            <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+              THIS COACHING PROGRAM IS
+              <br />
+              <span className="bg-gradient-accent bg-clip-text text-transparent">
+                THE FASTEST WAY TO THE ATHLETIC BODY YOU'VE ALWAYS WANTED!
+              </span>
+            </h2>
+          </div>
+          <div className="animate-scale-in" style={{ animationDelay: "0.2s" }}>
+            <img 
+              src={athleticBodyImage} 
+              alt="Athletic transformation result showing muscular physique"
+              className="w-full max-w-md mx-auto rounded-2xl shadow-[var(--shadow-hero)] hover:shadow-[var(--shadow-card)] hover:scale-105 transition-all duration-300"
+            />
+          </div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
