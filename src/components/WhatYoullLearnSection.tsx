@@ -4,23 +4,23 @@ import athleticBodyImage from "@/assets/athletic-body-result.png";
 const learningPoints = [
   {
     icon: Target,
-    title: "Where you are now vs. where you want to be",
-    description: "Get crystal clear on your current situation and define your transformation goals."
+    title: "Personal 1:1 Coaching",
+    description: "Get direct access to Steven with personalized guidance tailored specifically to your goals and lifestyle."
   },
   {
     icon: Zap,
-    title: "The challenges holding you back",
-    description: "Identify and overcome the specific obstacles preventing your success."
+    title: "Customized App Access",
+    description: "Exclusive access to Steven's custom app with your personalized workout and nutrition plans."
   },
   {
     icon: MapPin,
-    title: "Steven's proven blueprint for fat loss & muscle gain",
-    description: "Discover the exact system that's helped hundreds of busy professionals transform."
+    title: "Sustainable Nutrition Strategy",
+    description: "Learn the flexible nutrition approach that fits your lifestyle without restrictive dieting."
   },
   {
     icon: Heart,
-    title: "Flexible approach that works with your lifestyle",
-    description: "Learn how to fit fitness into your busy schedule without sacrificing your life."
+    title: "Guaranteed Results",
+    description: "Follow the system and see results in 90 days, or get your money back - no questions asked."
   }
 ];
 

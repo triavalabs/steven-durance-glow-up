@@ -36,16 +36,16 @@ const HeroSection = () => {
           
           {/* Main Headline */}
           <h1 className="text-3xl md:text-6xl font-black mb-6 leading-tight">
-            <span className="text-foreground">DO YOU WANT TO</span>
-            <br />
             <span className="bg-gradient-accent bg-clip-text text-transparent">
-              LOSE WEIGHT, BUILD MUSCLE, AND SEE YOUR 6 PACK?
+              EXCLUSIVE 1:1 COACHING
             </span>
+            <br />
+            <span className="text-foreground">LIMITED TO 10 CLIENTS</span>
           </h1>
           
           {/* Sub-headline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed font-bold">
-            WORK WITH ME 1-2-1 AND I'LL SHOW YOU HOW TO DO JUST THAT IN 90 DAYS...
+            LOSE FAT, BUILD MUSCLE & REVEAL YOUR 6-PACK IN 90 DAYS
           </p>
           
           {/* Video Instructions */}
@@ -85,14 +85,15 @@ const HeroSection = () => {
           </div>
           
           {/* CTAs */}
-          <div className="flex flex-col gap-6 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button variant="hero" size="xl" className="group text-lg px-12 py-6">
               <Rocket className="w-6 h-6 group-hover:rotate-12 transition-transform" />
-              APPLY TO THE ELITE COACHING PROGRAM
+              APPLY NOW
             </Button>
-            <p className="text-muted-foreground text-center max-w-lg">
-              LIMITED TO 10 CLIENTS AT A TIME - APPLY TO SEE IF WE HAVE A SPOT FOR YOU
-            </p>
+            <Button variant="outline" size="xl" className="text-lg px-12 py-6 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
+              <Phone className="w-6 h-6" />
+              SEE IF A SPOT IS OPEN
+            </Button>
           </div>
         </div>
       </div>
