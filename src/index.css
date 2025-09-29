@@ -2,75 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Steven Durance - Premium Coaching Funnel Design System
-Premium aesthetic with bold visual hierarchy and conversion-focused design.
+/* Steven Durance - Premium Agency-Grade Funnel Design System
+Elite, bold, and professional aesthetic with premium visual hierarchy and conversion-focused design.
 */
 
 @layer base {
   :root {
-    /* Base Colors - Premium Dark Palette */
-    --background: 0 0% 5%;
-    --foreground: 0 0% 98%;
-
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 96%;
-
-    --popover: 0 0% 7%;
-    --popover-foreground: 0 0% 96%;
-
-    /* Brand Colors - Premium & Confident */
-    --primary: 0 0% 4%;
-    --primary-foreground: 0 0% 98%;
+    /* Deep Premium Dark Theme */
+    --background: 0 0% 1%; /* #020202 - Deeper black */
+    --foreground: 0 0% 98%; /* Brighter white for contrast */
     
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 96%;
-
-    --muted: 0 0% 16%;
-    --muted-foreground: 0 0% 70%;
-
-    /* Accent - Premium Orange for Conversion */
-    --accent: 24 96% 55%;
-    --accent-foreground: 0 0% 4%;
-
-    /* Supporting Colors */
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 16%;
-    --input: 0 0% 12%;
-    --ring: 24 96% 55%;
-
-    --radius: 1rem;
-
-    /* Premium Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(0 0% 2%) 50%, hsl(0 0% 8%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(24 96% 55%) 0%, hsl(18 92% 50%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(0 0% 6%) 100%);
-    --gradient-premium: linear-gradient(145deg, hsl(0 0% 10%) 0%, hsl(0 0% 4%) 100%);
+    --card: 210 40% 3%; /* Darker cards */
+    --card-foreground: 0 0% 95%;
     
-    /* Premium Shadows & Effects */
-    --shadow-hero: 0 32px 64px -12px hsl(var(--accent) / 0.3);
-    --shadow-card: 0 16px 32px -8px hsl(0 0% 0% / 0.5);
-    --shadow-button: 0 12px 32px -8px hsl(var(--accent) / 0.4);
-    --shadow-premium: 0 20px 40px -12px hsl(0 0% 0% / 0.6);
-    --glow-accent: 0 0 40px hsl(var(--accent) / 0.3);
+    --popover: 210 40% 3%;
+    --popover-foreground: 0 0% 95%;
     
-    /* Typography Scale - Premium Hierarchy */
-    --font-size-display: 4rem;
-    --font-size-hero: 3.5rem;
-    --font-size-xl: 2.5rem;
-    --font-size-lg: 1.75rem;
-    --font-size-base: 1.125rem;
+    --primary: 24 74% 58%; /* Premium orange accent */
+    --primary-foreground: 0 0% 5%;
+    --primary-glow: 24 84% 68%; /* Lighter orange for glow effects */
     
-    /* Premium Animations */
+    --secondary: 210 40% 6%; /* Slightly lighter secondary */
+    --secondary-foreground: 0 0% 95%;
+    
+    --muted: 210 40% 8%;
+    --muted-foreground: 210 40% 60%; /* Better contrast */
+    
+    --accent: 24 74% 58%;
+    --accent-foreground: 0 0% 5%;
+    
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 95%;
+    
+    --border: 210 40% 12%;
+    --input: 210 40% 12%;
+    --ring: 24 74% 58%;
+    
+    --radius: 0.75rem;
+    
+    /* Premium Gradients - Enhanced */
+    --gradient-primary: linear-gradient(135deg, hsl(24 74% 58%), hsl(20 80% 65%), hsl(24 84% 68%));
+    --gradient-accent: linear-gradient(135deg, hsl(24 74% 58%), hsl(30 70% 55%), hsl(24 84% 68%));
+    --gradient-card: linear-gradient(145deg, hsl(210 40% 3%), hsl(210 35% 5%), hsl(210 40% 4%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 1%) 0%, hsl(210 45% 3%) 30%, hsl(210 40% 2%) 70%, hsl(0 0% 1%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(210 40% 2%), hsl(210 40% 4%));
+    --gradient-glass: linear-gradient(135deg, hsl(210 40% 8% / 0.8), hsl(210 35% 6% / 0.6));
+    --gradient-premium-card: linear-gradient(145deg, hsl(210 40% 4% / 0.9), hsl(210 35% 6% / 0.8));
+    
+    /* Premium Shadows - Enhanced */
+    --shadow-sm: 0 2px 4px -1px hsl(0 0% 0% / 0.2);
+    --shadow-md: 0 4px 8px -2px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 8px 16px -4px hsl(0 0% 0% / 0.4);
+    --shadow-xl: 0 12px 24px -6px hsl(0 0% 0% / 0.5);
+    --shadow-hero: 0 20px 60px -10px hsl(24 74% 58% / 0.4);
+    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.6);
+    --shadow-premium: 0 25px 50px -12px hsl(24 74% 58% / 0.3);
+    --shadow-glow: 0 0 60px hsl(24 84% 68% / 0.5);
+    --shadow-elegant: 0 15px 35px -10px hsl(24 74% 58% / 0.3);
+    --shadow-glass: 0 8px 32px 0 hsl(0 0% 0% / 0.37);
+    
+    /* Enhanced Typography Scale */
+    --text-display: clamp(4rem, 8vw, 8rem); /* Responsive 64px-128px */
+    --text-hero: clamp(2.5rem, 6vw, 5rem); /* Responsive 40px-80px */  
+    --text-heading: clamp(2rem, 4vw, 3.5rem); /* Responsive 32px-56px */
+    --text-subheading: clamp(1.5rem, 3vw, 2.5rem); /* Responsive 24px-40px */
+    --text-body-xl: 1.25rem; /* 20px */
+    --text-body-lg: 1.125rem; /* 18px */
+    --text-body: 1rem; /* 16px */
+    --text-sm: 0.875rem; /* 14px */
+    --text-xs: 0.75rem; /* 12px */
+    
+    /* Premium Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     --transition-premium: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-elastic: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     
-    /* Layout & Spacing */
-    --section-padding: 6rem;
-    --container-padding: 2rem;
-    --element-gap: 2rem;
+    /* Enhanced Layout & Spacing */
+    --section-padding: clamp(4rem, 8vw, 8rem); /* Responsive 64px-128px */
+    --container-padding: clamp(1.5rem, 4vw, 4rem); /* Responsive 24px-64px */
+    --element-gap: clamp(2rem, 4vw, 4rem); /* Responsive 32px-64px */
+    --card-padding: clamp(1.5rem, 3vw, 3rem); /* Responsive 24px-48px */
+    --content-width: 1200px;
+    --narrow-width: 800px;
+    
+    /* Glass Morphism */
+    --glass-bg: hsl(210 40% 8% / 0.1);
+    --glass-border: hsl(210 40% 20% / 0.2);
+    --backdrop-blur: blur(20px);
   }
 }
 

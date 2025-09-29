@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ["Inter", "Poppins", "Montserrat", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -25,6 +25,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -60,6 +61,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      fontSize: {
+        'display': ['var(--text-display)', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+        'hero': ['var(--text-hero)', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
+        'heading': ['var(--text-heading)', { lineHeight: '1.3', letterSpacing: '-0.01em' }],
+        'subheading': ['var(--text-subheading)', { lineHeight: '1.4' }],
+        'body-xl': ['var(--text-body-xl)', { lineHeight: '1.6', letterSpacing: '0.01em' }],
+        'body-lg': ['var(--text-body-lg)', { lineHeight: '1.6', letterSpacing: '0.01em' }],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -115,6 +124,19 @@ export default {
         'gradient-accent': 'var(--gradient-accent)',
         'gradient-card': 'var(--gradient-card)',
         'gradient-premium': 'var(--gradient-premium)',
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-subtle": "var(--gradient-subtle)",
+        "gradient-glass": "var(--gradient-glass)",
+        "gradient-premium-card": "var(--gradient-premium-card)",
+      },
+      backdropBlur: {
+        'glass': 'var(--backdrop-blur)',
+      },
+      maxWidth: {
+        'content': 'var(--content-width)',
+        'narrow': 'var(--narrow-width)',
       },
     },
   },
