@@ -18,6 +18,8 @@ const buttonVariants = cva(
         hero: "bg-gradient-accent text-accent-foreground font-bold shadow-[var(--shadow-button)] hover:shadow-[var(--shadow-hero)] hover:scale-105 active:scale-95 animate-glow-pulse",
         accent: "bg-accent text-accent-foreground font-semibold hover:bg-accent/90 shadow-lg hover:shadow-xl hover:scale-102 active:scale-98",
         "outline-light": "border-2 border-foreground/20 text-foreground bg-transparent hover:bg-foreground/10 hover:border-foreground/40 font-semibold",
+        premium: "bg-gradient-premium text-foreground border border-accent/20 hover:border-accent/40 hover:shadow-[var(--glow-accent)] transition-all duration-400",
+        cta: "bg-accent text-accent-foreground font-bold hover:bg-accent/90 shadow-[var(--shadow-button)] hover:shadow-[var(--shadow-hero)] animate-glow-pulse",
       },
       size: {
         default: "h-11 px-6 py-3",

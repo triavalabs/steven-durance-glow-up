@@ -2,64 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Steven Goldsmith Coaching - Bold Masculine Design System
-All colors MUST be HSL.
+/* Steven Durance - Premium Coaching Funnel Design System
+Premium aesthetic with bold visual hierarchy and conversion-focused design.
 */
 
 @layer base {
   :root {
-    /* Base Colors - Deep, Masculine Palette */
-    --background: 0 0% 8%;
+    /* Base Colors - Premium Dark Palette */
+    --background: 0 0% 5%;
     --foreground: 0 0% 98%;
 
-    --card: 0 0% 12%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 96%;
 
-    /* Brand Colors - Bold & Confident */
-    --primary: 0 0% 6%;
+    /* Brand Colors - Premium & Confident */
+    --primary: 0 0% 4%;
     --primary-foreground: 0 0% 98%;
     
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 0 0% 20%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 0% 70%;
 
-    /* Accent - Vibrant Orange for Energy & Transformation */
-    --accent: 24 95% 53%;
-    --accent-foreground: 0 0% 6%;
+    /* Accent - Premium Orange for Conversion */
+    --accent: 24 96% 55%;
+    --accent-foreground: 0 0% 4%;
 
     /* Supporting Colors */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 15%;
-    --ring: 24 95% 53%;
+    --border: 0 0% 16%;
+    --input: 0 0% 12%;
+    --ring: 24 96% 55%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Gradients - Powerful & Engaging */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(0 0% 4%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(18 90% 48%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(0 0% 10%) 100%);
+    /* Premium Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(0 0% 2%) 50%, hsl(0 0% 8%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(24 96% 55%) 0%, hsl(18 92% 50%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(0 0% 6%) 100%);
+    --gradient-premium: linear-gradient(145deg, hsl(0 0% 10%) 0%, hsl(0 0% 4%) 100%);
     
-    /* Shadows - Bold & Dimensional */
-    --shadow-hero: 0 25px 50px -12px hsl(var(--accent) / 0.25);
-    --shadow-card: 0 10px 25px -8px hsl(0 0% 0% / 0.4);
-    --shadow-button: 0 8px 25px -8px hsl(var(--accent) / 0.3);
+    /* Premium Shadows & Effects */
+    --shadow-hero: 0 32px 64px -12px hsl(var(--accent) / 0.3);
+    --shadow-card: 0 16px 32px -8px hsl(0 0% 0% / 0.5);
+    --shadow-button: 0 12px 32px -8px hsl(var(--accent) / 0.4);
+    --shadow-premium: 0 20px 40px -12px hsl(0 0% 0% / 0.6);
+    --glow-accent: 0 0 40px hsl(var(--accent) / 0.3);
     
-    /* Typography Scale */
+    /* Typography Scale - Premium Hierarchy */
+    --font-size-display: 4rem;
     --font-size-hero: 3.5rem;
-    --font-size-xl: 2.25rem;
-    --font-size-lg: 1.5rem;
+    --font-size-xl: 2.5rem;
+    --font-size-lg: 1.75rem;
+    --font-size-base: 1.125rem;
     
-    /* Animations */
+    /* Premium Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-premium: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+    /* Layout & Spacing */
+    --section-padding: 6rem;
+    --container-padding: 2rem;
+    --element-gap: 2rem;
   }
 }
 

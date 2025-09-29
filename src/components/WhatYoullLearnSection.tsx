@@ -26,53 +26,114 @@ const learningPoints = [
 
 const WhatYoullLearnSection = () => {
   return (
-    <section className="pt-24 pb-8 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="border-2 border-red-500 rounded-3xl bg-gradient-card overflow-hidden">
-          <div className="grid lg:grid-cols-2 gap-12 items-end p-8 pb-0">
-            <div className="animate-fade-in-up">
-              <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-                THIS COACHING PROGRAM IS
+    <section className="py-24 bg-gradient-premium relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-accent/10"></div>
+      <div className="absolute top-20 right-20 w-32 h-32 bg-accent/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 left-20 w-40 h-40 bg-accent/5 rounded-full blur-3xl"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
+        {/* Premium Header Card */}
+        <div className="max-w-4xl mx-auto mb-20">
+          <div className="bg-gradient-card border-2 border-accent/20 rounded-3xl p-12 shadow-[var(--shadow-premium)] hover:shadow-[var(--shadow-hero)] transition-all duration-500">
+            <div className="text-center animate-fade-in-up">
+              <div className="inline-flex items-center gap-3 bg-accent/20 px-6 py-3 rounded-full mb-8">
+                <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+                <span className="text-accent font-bold uppercase tracking-wider">Limited to 10 Clients</span>
+                <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+              </div>
+              
+              <h2 className="text-4xl md:text-6xl font-black text-foreground mb-8 leading-tight">
+                THE FASTEST WAY TO
                 <br />
                 <span className="bg-gradient-accent bg-clip-text text-transparent">
-                  THE FASTEST WAY TO THE ATHLETIC BODY YOU'VE ALWAYS WANTED!
+                  THE ATHLETIC BODY
                 </span>
+                <br />
+                YOU'VE ALWAYS WANTED
               </h2>
-            </div>
-            <div className="animate-scale-in self-end" style={{ animationDelay: "0.2s" }}>
-              <img 
-                src={athleticBodyImage} 
-                alt="Athletic transformation result showing muscular physique"
-                className="w-full max-w-md mx-auto rounded-t-2xl shadow-[var(--shadow-hero)] hover:shadow-[var(--shadow-card)] hover:scale-105 transition-all duration-300"
-              />
+              
+              <div className="w-24 h-1 bg-gradient-accent rounded-full mx-auto mb-8"></div>
+              
+              <p className="text-xl md:text-2xl text-muted-foreground font-medium max-w-3xl mx-auto leading-relaxed">
+                Stop wasting time with generic programs. Get the personalized coaching that actually works.
+              </p>
             </div>
           </div>
         </div>
-        
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+        {/* Premium Benefits Grid */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
           {learningPoints.map((point, index) => (
             <div 
               key={index}
-              className="group bg-gradient-card p-8 rounded-2xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hero)] transition-all duration-300 hover:-translate-y-2 animate-scale-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group bg-gradient-card border border-accent/10 p-8 rounded-2xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-premium)] hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 animate-scale-in"
+              style={{ animationDelay: `${index * 0.15}s` }}
             >
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0">
-                  <div className="w-14 h-14 bg-accent rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <point.icon className="w-7 h-7 text-accent-foreground" />
+                  <div className="w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[var(--shadow-button)]">
+                    <point.icon className="w-8 h-8 text-accent-foreground" />
                   </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
+                <div className="flex-1">
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors">
                     {point.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                     {point.description}
                   </p>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Athletic Body Showcase */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-card border-2 border-accent/20 rounded-3xl overflow-hidden shadow-[var(--shadow-premium)]">
+            <div className="grid lg:grid-cols-2 gap-0 items-end">
+              <div className="p-12 animate-fade-in-up">
+                <div className="space-y-6">
+                  <div className="inline-flex items-center gap-2 bg-accent/20 px-4 py-2 rounded-full">
+                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                    <span className="text-accent font-semibold text-sm uppercase tracking-wide">Results Guaranteed</span>
+                  </div>
+                  
+                  <h3 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
+                    This Is What's Possible
+                    <span className="block text-accent">In Just 90 Days</span>
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-accent rounded-full"></div>
+                      <span className="text-muted-foreground">Lose 15-25 lbs of pure fat</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-accent rounded-full"></div>
+                      <span className="text-muted-foreground">Build lean, athletic muscle</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-accent rounded-full"></div>
+                      <span className="text-muted-foreground">Reveal your six-pack abs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="animate-scale-in self-end" style={{ animationDelay: "0.3s" }}>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-accent/20 blur-2xl rounded-t-3xl"></div>
+                  <img 
+                    src={athleticBodyImage} 
+                    alt="Athletic transformation result showing muscular physique"
+                    className="relative w-full max-w-md mx-auto rounded-t-3xl shadow-[var(--shadow-hero)] hover:scale-105 transition-all duration-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
