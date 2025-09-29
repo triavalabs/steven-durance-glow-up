@@ -1,9 +1,8 @@
 [build]
-# ➊ install a browser → ➋ build → ➌ generate og.jpg
-command = "npx puppeteer browsers install chromium && npm run build && node scripts/generate-og.js"
-publish = "dist"
+  command = "npx playwright install chromium && npm run build && node scripts/generate-og.js"
+  publish = "dist"
 
 [build.environment]
-NODE_VERSION = "18"
-# (optional but helps Netlify cache)
-PUPPETEER_CACHE_DIR = "/opt/buildhome/.cache/puppeteer"
+  NODE_VERSION = "18"
+  # optional: cache browsers between builds
+  PLAYWRIGHT_BROWSERS_PATH = "/opt/buildhome/.cache/ms-playwright"
