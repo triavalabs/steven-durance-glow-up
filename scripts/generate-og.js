@@ -1,30 +1,25 @@
 // scripts/generate-og.js
-// Generate a 1200x630 Open Graph image from the built site in /dist.
+// Generate a 1200x630 Open Graph image from /dist using Playwright's bundled Chromium.
+// Netlify build command should be:
+//   npx playwright install chromium && npm run build && node scripts/generate-og.js
 //
-// Netlify build command should install Chromium first, then run this, e.g.:
-//   npx puppeteer browsers install chromium && npm run build && node scripts/generate-og.js
-//
-// Requires dev deps: puppeteer, serve-handler
-//   npm i -D puppeteer serve-handler
+// Requires dev deps: playwright-chromium, serve-handler
 
 import http from 'http';
 import { once } from 'events';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import serveHandler from 'serve-handler';
-import puppeteer from 'puppeteer';
+import { chromium } from 'playwright-chromium';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = path.resolve(__dirname, '../dist');
-const PORT = process.env.OG_SERVER_PORT ? Number(process.env.OG_SERVER_PORT) : 5055;
+const PORT = Number(process.env.OG_SERVER_PORT || 5055);
 const ORIGIN = `http://localhost:${PORT}/`;
 const OUTPUT = path.join(DIST_DIR, 'og.jpg');
-const VIEWPORT = { width: 1200, height: 630, deviceScaleFactor: 1 };
 
-// Optional: pass a selector in env to capture a specific section
+const VIEWPORT = { width: 1200, height: 630 };
 const TARGET_SELECTOR = process.env.OG_SELECTOR || '#og-card';
-
-// Elements to hide during capture (add data-og-hide to force-hide any element)
 const HIDE_SELECTORS = [
   '[data-og-hide]',
   '.cookie-banner',
@@ -37,9 +32,7 @@ const HIDE_SELECTORS = [
   '#hubspot-messages-iframe-container',
 ];
 
-function log(...args) {
-  console.log('[OG]', ...args);
-}
+function log(...a) { console.log('[OG]', ...a); }
 
 async function startServer() {
   const server = http.createServer((req, res) =>
@@ -47,36 +40,22 @@ async function startServer() {
   );
   server.listen(PORT);
   await once(server, 'listening');
-  log(`Local server started at ${ORIGIN}`);
+  log(`Local server at ${ORIGIN}`);
   return server;
 }
 
 async function main() {
   const server = await startServer();
-
-  // Use managed Chromium path installed by `puppeteer browsers install chromium`
-  const executablePath = puppeteer.executablePath();
-  if (!executablePath) {
-    throw new Error('No Chromium executablePath found. Ensure you ran: npx puppeteer browsers install chromium');
-  }
-
-  const browser = await puppeteer.launch({
-    executablePath,
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-  });
+  const browser = await chromium.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
 
   try {
     const page = await browser.newPage();
-    await page.setViewport(VIEWPORT);
+    await page.setViewportSize(VIEWPORT);
+    await page.goto(ORIGIN, { waitUntil: 'networkidle', timeout: 120_000 });
 
-    // Load homepage
-    await page.goto(ORIGIN, { waitUntil: 'networkidle0', timeout: 120_000 });
-
-    // Hide overlays/popups
     const hideCSS = `${HIDE_SELECTORS.join(',')} { display: none !important; visibility: hidden !important; }`;
     await page.addStyleTag({ content: hideCSS });
 
-    // If selector exists, screenshot that element; else capture the viewport
     let clipped = false;
     if (TARGET_SELECTOR) {
       const el = await page.$(TARGET_SELECTOR);
@@ -95,13 +74,12 @@ async function main() {
             },
           });
           clipped = true;
-          log(`Captured selector ${TARGET_SELECTOR} → ${OUTPUT}`);
+          log(`Captured ${TARGET_SELECTOR} → ${OUTPUT}`);
         }
       }
     }
 
     if (!clipped) {
-      // Fallback: full 1200x630 viewport
       await page.screenshot({
         path: OUTPUT,
         type: 'jpeg',
