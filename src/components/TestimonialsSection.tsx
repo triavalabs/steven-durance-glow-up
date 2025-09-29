@@ -1,18 +1,11 @@
 import { Star } from "lucide-react";
 
 // Import transformation images
-import marcusBefore from "@/assets/transformations/marcus-before.jpg";
-import marcusAfter from "@/assets/transformations/marcus-after.jpg";
-import davidBefore from "@/assets/transformations/david-before.jpg";
-import davidAfter from "@/assets/transformations/david-after.jpg";
-import jamesBefore from "@/assets/transformations/james-before.jpg";
-import jamesAfter from "@/assets/transformations/james-after.jpg";
-import michaelBefore from "@/assets/transformations/michael-before.jpg";
-import michaelAfter from "@/assets/transformations/michael-after.jpg";
-import alexBefore from "@/assets/transformations/alex-before.jpg";
-import alexAfter from "@/assets/transformations/alex-after.jpg";
-import ryanBefore from "@/assets/transformations/ryan-before.jpg";
-import ryanAfter from "@/assets/transformations/ryan-after.jpg";
+import client1Transform from "@/assets/transformations/client1-transformation.png";
+import client2Transform from "@/assets/transformations/client2-transformation.png";
+import client3Transform from "@/assets/transformations/client3-transformation.png";
+import client4Transform from "@/assets/transformations/client4-transformation.png";
+import client5Transform from "@/assets/transformations/client5-transformation.png";
 
 const testimonials = [
   {
@@ -21,12 +14,10 @@ const testimonials = [
     location: "San Francisco",
     quote: "Lost 25 lbs and gained incredible confidence. Steven's approach actually fits into my crazy work schedule.",
     rating: 5,
-    result: "25 lbs lost, 6 months",
-    beforeImage: marcusBefore,
-    afterImage: marcusAfter,
+    result: "25 lbs lost in 6 months",
+    transformationImage: client1Transform,
     duration: "6 MONTHS",
-    beforeStats: "210 LBS",
-    afterStats: "185 LBS"
+    weightLoss: "25 LBS"
   },
   {
     name: "David Rodriguez",
@@ -34,12 +25,10 @@ const testimonials = [
     location: "New York",
     quote: "Finally found a system that doesn't require me to live in the gym. The results speak for themselves.",
     rating: 5,
-    result: "15% body fat reduction",
-    beforeImage: davidBefore,
-    afterImage: davidAfter,
+    result: "20 lbs lost in 4 months",
+    transformationImage: client2Transform,
     duration: "4 MONTHS",
-    beforeStats: "22% BF",
-    afterStats: "12% BF"
+    weightLoss: "20 LBS"
   },
   {
     name: "James Thompson",
@@ -48,11 +37,9 @@ const testimonials = [
     quote: "Steven understands the unique challenges we face. His program is practical, sustainable, and it works.",
     rating: 5,
     result: "30 lbs muscle gained",
-    beforeImage: jamesBefore,
-    afterImage: jamesAfter,
+    transformationImage: client3Transform,
     duration: "8 MONTHS",
-    beforeStats: "165 LBS",
-    afterStats: "195 LBS"
+    weightLoss: "30 LBS MUSCLE"
   },
   {
     name: "Michael Park",
@@ -61,11 +48,9 @@ const testimonials = [
     quote: "The confidence boost was immediate. I feel like a completely different person - stronger inside and out.",
     rating: 5,
     result: "Complete transformation",
-    beforeImage: michaelBefore,
-    afterImage: michaelAfter,
+    transformationImage: client4Transform,
     duration: "5 MONTHS",
-    beforeStats: "190 LBS",
-    afterStats: "175 LBS"
+    weightLoss: "15 LBS"
   },
   {
     name: "Alex Martinez",
@@ -73,25 +58,10 @@ const testimonials = [
     location: "Austin",
     quote: "Travel constantly for work, but Steven's system travels with me. Consistency has never been easier.",
     rating: 5,
-    result: "20 lbs lost, maintained",
-    beforeImage: alexBefore,
-    afterImage: alexAfter,
+    result: "18 lbs lost in 3 months",
+    transformationImage: client5Transform,
     duration: "3 MONTHS",
-    beforeStats: "200 LBS",
-    afterStats: "180 LBS"
-  },
-  {
-    name: "Ryan Johnson",
-    role: "Creative Director",
-    location: "Miami",
-    quote: "Best investment I've ever made. The physical changes are amazing, but the mental shift is life-changing.",
-    rating: 5,
-    result: "Complete lifestyle change",
-    beforeImage: ryanBefore,
-    afterImage: ryanAfter,
-    duration: "7 MONTHS",
-    beforeStats: "185 LBS",
-    afterStats: "170 LBS"
+    weightLoss: "18 LBS"
   }
 ];
 
@@ -115,38 +85,13 @@ const TestimonialsSection = () => {
               className="group bg-gradient-card p-6 rounded-2xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hero)] transition-all duration-300 hover:-translate-y-2 animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Transformation Images */}
+              {/* Transformation Image */}
               <div className="relative mb-6 overflow-hidden rounded-xl">
-                <div className="flex gap-1">
-                  {/* Before Image */}
-                  <div className="relative flex-1">
-                    <img 
-                      src={testimonial.beforeImage} 
-                      alt={`${testimonial.name} before transformation`}
-                      className="w-full h-32 object-cover rounded-l-lg"
-                    />
-                    <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                      {testimonial.beforeStats}
-                    </div>
-                  </div>
-                  
-                  {/* After Image */}
-                  <div className="relative flex-1">
-                    <img 
-                      src={testimonial.afterImage} 
-                      alt={`${testimonial.name} after transformation`}
-                      className="w-full h-32 object-cover rounded-r-lg"
-                    />
-                    <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                      {testimonial.afterStats}
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Duration Overlay */}
-                <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-accent text-white text-xs font-bold px-3 py-1 rounded">
-                  {testimonial.duration}
-                </div>
+                <img 
+                  src={testimonial.transformationImage} 
+                  alt={`${testimonial.name} transformation results`}
+                  className="w-full h-48 object-cover rounded-xl"
+                />
               </div>
               
               {/* Rating */}
