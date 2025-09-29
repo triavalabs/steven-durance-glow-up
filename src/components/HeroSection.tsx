@@ -29,18 +29,28 @@ const HeroSection = () => {
         </div>
         
         <div className="max-w-4xl mx-auto animate-fade-in-up pt-16 md:pt-0">
+          {/* Limited Spots Banner */}
+          <div className="bg-accent text-accent-foreground px-6 py-3 rounded-full text-sm font-bold mb-8 inline-block animate-pulse">
+            THIS COACHING PROGRAM IS LIMITED TO 10 CLIENTS AT A TIME... APPLY NOW TO SEE IF WE HAVE ANY OPENINGS!
+          </div>
+          
           {/* Main Headline */}
-          <h1 className="text-3xl md:text-7xl font-black mb-6 leading-tight">
-            <span className="text-foreground">You're In —</span>
+          <h1 className="text-3xl md:text-6xl font-black mb-6 leading-tight">
+            <span className="text-foreground">DO YOU WANT TO</span>
             <br />
             <span className="bg-gradient-accent bg-clip-text text-transparent">
-              Your Free Six-Pack Strategy Call Is Confirmed
+              LOSE WEIGHT, BUILD MUSCLE, AND SEE YOUR 6 PACK?
             </span>
           </h1>
           
           {/* Sub-headline */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Here's what to expect and how we'll help you transform your body and confidence.
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed font-bold">
+            WORK WITH ME 1-2-1 AND I'LL SHOW YOU HOW TO DO JUST THAT IN 90 DAYS...
+          </p>
+          
+          {/* Video Instructions */}
+          <p className="text-lg text-accent mb-4 font-semibold">
+            Turn Sound ON! (Please Wait For Video To Fully Load)
           </p>
           
           {/* Video Section */}
@@ -75,15 +85,14 @@ const HeroSection = () => {
           </div>
           
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button variant="hero" size="xl" className="group">
-              <Rocket className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-              Join Coaching Now
+          <div className="flex flex-col gap-6 justify-center items-center">
+            <Button variant="hero" size="xl" className="group text-lg px-12 py-6">
+              <Rocket className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+              APPLY TO THE ELITE COACHING PROGRAM
             </Button>
-            <Button variant="outline-light" size="xl">
-              <Phone className="w-5 h-5" />
-              Book Another Call
-            </Button>
+            <p className="text-muted-foreground text-center max-w-lg">
+              LIMITED TO 10 CLIENTS AT A TIME - APPLY TO SEE IF WE HAVE A SPOT FOR YOU
+            </p>
           </div>
         </div>
       </div>

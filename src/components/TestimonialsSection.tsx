@@ -71,10 +71,14 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Track Record
+            A TRACK RECORD THAT
+            <br />
+            <span className="bg-gradient-accent bg-clip-text text-transparent">
+              SPEAKS FOR ITSELF
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real transformations from busy professionals just like you.
+            Steven Goldsmith is responsible for hundreds of success stories...
           </p>
         </div>
         

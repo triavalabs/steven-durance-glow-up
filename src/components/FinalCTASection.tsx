@@ -13,16 +13,14 @@ const FinalCTASection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Headline */}
           <div className="animate-fade-in-up">
-            <h2 className="text-5xl md:text-6xl font-black text-foreground mb-6 leading-tight">
-              Your Journey
-              <span className="block bg-gradient-accent bg-clip-text text-transparent">
-                Starts Now
+            <h2 className="text-4xl md:text-6xl font-black text-foreground mb-6 leading-tight">
+              <span className="bg-gradient-accent bg-clip-text text-transparent">
+                APPLY TO THE ELITE COACHING PROGRAM
               </span>
             </h2>
             
-            <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              You've seen the results. You've heard the stories. You've confirmed your strategy call. 
-              The only question left is: are you ready to transform?
+            <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed font-bold">
+              LIMITED TO 10 CLIENTS AT A TIME - APPLY TO SEE IF WE HAVE A SPOT FOR YOU
             </p>
           </div>
           
@@ -42,13 +40,13 @@ const FinalCTASection = () => {
           
           {/* Main CTA */}
           <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <Button variant="hero" size="xl" className="group mb-8">
-              Yes, I'm Ready to Transform
+            <Button variant="hero" size="xl" className="group mb-8 text-lg px-12 py-6">
+              APPLY NOW TO SEE IF WE HAVE ANY OPENINGS
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </Button>
             
             <p className="text-muted-foreground text-sm max-w-md mx-auto">
-              Click above to access Steven's exclusive coaching program and start your transformation today.
+              Limited to 10 clients at a time. Apply to see if we have a spot for you.
             </p>
           </div>
           

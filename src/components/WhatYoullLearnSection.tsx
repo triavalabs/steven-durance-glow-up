@@ -28,12 +28,13 @@ const WhatYoullLearnSection = () => {
     <section className="pt-24 pb-8 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            What You'll Discover on Your Call
+          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+            THIS COACHING PROGRAM IS
+            <br />
+            <span className="bg-gradient-accent bg-clip-text text-transparent">
+              THE FASTEST WAY TO THE ATHLETIC BODY YOU'VE ALWAYS WANTED!
+            </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            During your personalized strategy session, Steven will help you uncover exactly what's needed to transform your body and mindset.
-          </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
