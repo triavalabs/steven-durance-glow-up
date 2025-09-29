@@ -19,13 +19,11 @@ const HeroSection = () => {
       <div className="relative z-20 container mx-auto px-6 text-center">
         {/* Logo */}
         <div className="absolute top-2 right-4 md:top-8 md:left-8 z-30 animate-fade-in">
-          <div className="backdrop-blur-sm bg-background/10 rounded-lg p-1 md:p-3">
-            <img 
-              src={stevenLogo} 
-              alt="StevenDurance Logo" 
-              className="w-10 h-10 md:w-20 md:h-20 opacity-90 hover:opacity-100 transition-opacity duration-300"
-            />
-          </div>
+          <img 
+            src={stevenLogo} 
+            alt="StevenDurance Logo" 
+            className="w-10 h-10 md:w-20 md:h-20 opacity-90 hover:opacity-100 transition-opacity duration-300"
+          />
         </div>
         
         <div className="max-w-4xl mx-auto animate-fade-in-up pt-16 md:pt-0">
