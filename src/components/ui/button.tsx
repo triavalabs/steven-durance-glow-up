@@ -18,7 +18,7 @@ const buttonVariants = cva(
         hero: "bg-gradient-primary text-primary-foreground hover:shadow-[var(--shadow-hero)] hover:scale-105 font-bold text-lg shadow-lg border border-primary-glow/20",
         premium: "bg-gradient-accent text-accent-foreground hover:shadow-[var(--shadow-premium)] hover:scale-[1.02] font-black border border-accent/30 shadow-elegant",
         glass: "bg-gradient-glass backdrop-blur-sm text-foreground hover:bg-gradient-premium-card border border-white/10 shadow-glass hover:shadow-glow",
-        cta: "bg-gradient-to-r from-orange-500 to-red-600 text-white font-black text-lg shadow-2xl hover:shadow-orange-500/50 hover:scale-110 transition-all duration-300 border-2 border-orange-400/50 animate-pulse hover:animate-none tracking-wide",
+        cta: "bg-gradient-to-r from-orange-400 to-amber-600 text-white font-black text-lg shadow-lg hover:shadow-orange-400/40 hover:scale-105 transition-all duration-300 border border-orange-300/40 backdrop-blur-sm tracking-wide",
         "outline-accent": "border-2 border-accent bg-transparent text-accent font-bold hover:bg-accent hover:text-accent-foreground shadow-lg hover:shadow-accent/25 transition-all duration-300",
         minimal: "bg-transparent text-foreground hover:bg-white/5 border border-white/20 hover:border-white/30",
       },
