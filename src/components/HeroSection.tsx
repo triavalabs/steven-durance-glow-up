@@ -59,7 +59,7 @@ const HeroSection = () => {
             <iframe
               id="youtube-video"
               className="w-full h-full rounded-xl"
-              src="https://www.youtube.com/embed/4GjOqOoKR48?start=17&autoplay=0&rel=0&modestbranding=1&enablejsapi=1"
+              src="https://www.youtube.com/embed/4GjOqOoKR48?start=17&autoplay=0&rel=0&modestbranding=1&enablejsapi=1&showinfo=0&controls=0&fs=0&iv_load_policy=3&cc_load_policy=0&disablekb=1"
               title="Steven's Strategy Call Message"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
