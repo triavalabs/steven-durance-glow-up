@@ -1,8 +1,6 @@
 [build]
   command = "npx playwright install chromium && npm run build && node scripts/generate-og.js"
   publish = "dist"
-
 [build.environment]
   NODE_VERSION = "18"
-  # optional: cache browsers between builds
   PLAYWRIGHT_BROWSERS_PATH = "/opt/buildhome/.cache/ms-playwright"
