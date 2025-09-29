@@ -61,11 +61,11 @@ Elite, bold, and professional aesthetic with premium visual hierarchy and conver
     --shadow-elegant: 0 15px 35px -10px hsl(24 74% 58% / 0.3);
     --shadow-glass: 0 8px 32px 0 hsl(0 0% 0% / 0.37);
     
-    /* Enhanced Typography Scale */
-    --text-display: clamp(4rem, 8vw, 8rem); /* Responsive 64px-128px */
-    --text-hero: clamp(2.5rem, 6vw, 5rem); /* Responsive 40px-80px */  
-    --text-heading: clamp(2rem, 4vw, 3.5rem); /* Responsive 32px-56px */
-    --text-subheading: clamp(1.5rem, 3vw, 2.5rem); /* Responsive 24px-40px */
+    /* Enhanced Typography Scale - Mobile Optimized */
+    --text-display: clamp(2.5rem, 8vw, 6rem); /* Responsive 40px-96px - Better for mobile */
+    --text-hero: clamp(2rem, 6vw, 4rem); /* Responsive 32px-64px */  
+    --text-heading: clamp(1.75rem, 4vw, 3rem); /* Responsive 28px-48px */
+    --text-subheading: clamp(1.25rem, 3vw, 2rem); /* Responsive 20px-32px */
     --text-body-xl: 1.25rem; /* 20px */
     --text-body-lg: 1.125rem; /* 18px */
     --text-body: 1rem; /* 16px */
