@@ -212,34 +212,34 @@ const TestimonialsSection = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
               <div className="text-center animate-fade-in-up group cursor-pointer">
-                <div className="text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">500+</div>
-                <div className="text-muted-foreground font-semibold">Verified Transformations</div>
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">500+</div>
+                <div className="text-muted-foreground font-semibold text-sm sm:text-base">Verified Transformations</div>
                 <div className="text-xs text-muted-foreground/70 mt-1">Since 2019</div>
               </div>
               
               <div className="text-center animate-fade-in-up group cursor-pointer" style={{ animationDelay: "0.1s" }}>
-                <div className="text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
                   97%
                 </div>
-                <div className="text-muted-foreground font-semibold">Success Rate</div>
+                <div className="text-muted-foreground font-semibold text-sm sm:text-base">Success Rate</div>
                 <div className="text-xs text-muted-foreground/70 mt-1">Complete program</div>
               </div>
               
               <div className="text-center animate-fade-in-up group cursor-pointer" style={{ animationDelay: "0.2s" }}>
-                <div className="text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
                   12
                 </div>
-                <div className="text-muted-foreground font-semibold">Week Program</div>
+                <div className="text-muted-foreground font-semibold text-sm sm:text-base">Week Program</div>
                 <div className="text-xs text-muted-foreground/70 mt-1">Average duration</div>
               </div>
               
               <div className="text-center animate-fade-in-up group cursor-pointer" style={{ animationDelay: "0.3s" }}>
-                <div className="text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
                   24/7
                 </div>
-                <div className="text-muted-foreground font-semibold">Expert Support</div>
+                <div className="text-muted-foreground font-semibold text-sm sm:text-base">Expert Support</div>
                 <div className="text-xs text-muted-foreground/70 mt-1">Always available</div>
               </div>
             </div>
