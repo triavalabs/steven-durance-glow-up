@@ -84,23 +84,23 @@ const StevensStorySection = () => {
               </div>
               
               {/* Premium Stats Grid */}
-              <div className="bg-gradient-card border border-accent/20 rounded-2xl p-8 shadow-[var(--shadow-card)]">
-                <div className="grid grid-cols-3 gap-8">
+              <div className="bg-gradient-card border border-accent/20 rounded-xl p-6 shadow-[var(--shadow-card)]">
+                <div className="grid grid-cols-3 gap-6">
                   <div className="text-center">
-                    <div className="text-4xl md:text-5xl font-black text-accent mb-3 animate-counter-up">500+</div>
-                    <div className="text-sm md:text-base text-muted-foreground font-semibold uppercase tracking-wide">
+                    <div className="text-3xl md:text-4xl font-black text-accent mb-2 animate-counter-up">500+</div>
+                    <div className="text-xs md:text-sm text-muted-foreground font-semibold uppercase tracking-wide">
                       Clients Transformed
                     </div>
                   </div>
                   <div className="text-center border-x border-accent/20">
-                    <div className="text-4xl md:text-5xl font-black text-accent mb-3 animate-counter-up">5+</div>
-                    <div className="text-sm md:text-base text-muted-foreground font-semibold uppercase tracking-wide">
+                    <div className="text-3xl md:text-4xl font-black text-accent mb-2 animate-counter-up">5+</div>
+                    <div className="text-xs md:text-sm text-muted-foreground font-semibold uppercase tracking-wide">
                       Years Experience
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl md:text-5xl font-black text-accent mb-3 animate-counter-up">95%</div>
-                    <div className="text-sm md:text-base text-muted-foreground font-semibold uppercase tracking-wide">
+                    <div className="text-3xl md:text-4xl font-black text-accent mb-2 animate-counter-up">95%</div>
+                    <div className="text-xs md:text-sm text-muted-foreground font-semibold uppercase tracking-wide">
                       Success Rate
                     </div>
                   </div>
