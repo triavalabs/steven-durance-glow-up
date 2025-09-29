@@ -214,9 +214,7 @@ const TestimonialsSection = () => {
             
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
               <div className="text-center animate-fade-in-up group cursor-pointer">
-                <div className="text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
-                  500+
-                </div>
+                <div className="text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">500+</div>
                 <div className="text-muted-foreground font-semibold">Verified Transformations</div>
                 <div className="text-xs text-muted-foreground/70 mt-1">Since 2019</div>
               </div>
