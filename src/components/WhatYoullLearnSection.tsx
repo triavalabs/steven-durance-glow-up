@@ -5,7 +5,7 @@ const learningPoints = [
   {
     icon: Target,
     title: "Personal 1:1 Coaching",
-    description: "Get direct access to Steven with personalized guidance tailored specifically to your goals and lifestyle."
+    description: "Get a personalized plan that teaches you exactly what your body needs—and how to keep your results for life."
   },
   {
     icon: Zap,
