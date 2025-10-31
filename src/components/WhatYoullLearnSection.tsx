@@ -155,7 +155,7 @@ const WhatYoullLearnSection = () => {
                 </div>
               </div>
               
-              <div className="animate-scale-in self-end" style={{ animationDelay: "0.3s" }}>
+              <div className="hidden lg:block animate-scale-in self-end" style={{ animationDelay: "0.3s" }}>
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-accent/20 blur-2xl rounded-t-3xl"></div>
                   <img 
