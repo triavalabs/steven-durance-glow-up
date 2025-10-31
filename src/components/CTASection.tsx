@@ -10,7 +10,7 @@ interface CTASectionProps {
 const CTASection = ({ variant = "primary", urgency = "LIMITED SPOTS", className = "" }: CTASectionProps) => {
   if (variant === "secondary") {
     return (
-      <section className={`py-8 text-center ${className}`}>
+      <section className={`pb-8 text-center ${className}`}>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button variant="outline-accent" size="lg" className="w-auto">
             CHECK AVAILABILITY
