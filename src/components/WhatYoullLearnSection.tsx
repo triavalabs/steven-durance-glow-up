@@ -39,7 +39,7 @@ const WhatYoullLearnSection = () => {
           <div 
             className="sm:bg-gradient-card sm:border-2 sm:border-accent/20 sm:rounded-3xl sm:p-12 sm:shadow-[var(--shadow-premium)] sm:hover:shadow-[var(--shadow-hero)] transition-all duration-500 relative sm:overflow-hidden sm:bg-cover sm:bg-center sm:bg-no-repeat"
             style={{
-              backgroundImage: typeof window !== 'undefined' && window.innerWidth >= 640 ? `url(${athleticHeroBg})` : undefined
+              backgroundImage: typeof window !== 'undefined' && window.innerWidth >= 640 ? `url(${athleticHeroBg})` : 'none'
             }}
           >
             {/* Gradient overlay - desktop only */}
