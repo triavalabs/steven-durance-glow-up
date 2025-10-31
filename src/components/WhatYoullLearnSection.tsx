@@ -1,5 +1,6 @@
 import { Target, Zap, MapPin, Heart } from "lucide-react";
 import athleticBodyImage from "@/assets/athletic-body-result.png";
+import athleticHeroBg from "@/assets/athletic-hero-bg.png";
 
 const learningPoints = [
   {
@@ -35,8 +36,17 @@ const WhatYoullLearnSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Premium Header Card */}
         <div className="max-w-4xl mx-auto mb-20">
-          <div className="bg-gradient-card border-2 border-accent/20 rounded-3xl p-12 shadow-[var(--shadow-premium)] hover:shadow-[var(--shadow-hero)] transition-all duration-500">
-            <div className="text-center animate-fade-in-up">
+          <div 
+            className="bg-gradient-card border-2 border-accent/20 rounded-3xl p-12 shadow-[var(--shadow-premium)] hover:shadow-[var(--shadow-hero)] transition-all duration-500 relative overflow-hidden"
+            style={{
+              backgroundImage: `url(${athleticHeroBg})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            <div className="absolute inset-0 bg-gradient-card/90 md:bg-gradient-to-r md:from-background/95 md:via-background/90 md:to-transparent"></div>
+            <div className="text-center animate-fade-in-up relative z-10">
               <div className="inline-flex items-center gap-3 bg-accent/20 px-6 py-3 rounded-full mb-8">
                 <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
                 <span className="text-accent font-bold uppercase tracking-wider">Limited to 10 Clients</span>
