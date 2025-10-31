@@ -45,7 +45,7 @@ const WhatYoullLearnSection = () => {
               backgroundRepeat: 'no-repeat'
             }}
           >
-            <div className="absolute inset-0 bg-gradient-card/98 md:bg-gradient-to-r md:from-background/95 md:via-background/90 md:to-transparent"></div>
+            <div className="absolute inset-0 bg-background/85 md:bg-gradient-to-r md:from-background/95 md:via-background/90 md:to-transparent"></div>
             <div className="text-center animate-fade-in-up relative z-10">
               <div className="inline-flex items-center gap-3 bg-accent/20 px-6 py-3 rounded-full mb-8">
                 <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
