@@ -29,7 +29,7 @@ const CTASection = ({ variant = "primary", urgency = "LIMITED SPOTS", className 
   }
 
   return (
-    <section className={`py-12 text-center ${className}`}>
+    <section className={`pb-12 sm:py-12 text-center ${className}`}>
       <div className="flex flex-col items-center gap-6">
         <Button variant="cta" size="lg" className="w-auto mx-auto group px-6 sm:px-12 text-base sm:text-lg rounded-[10px] sm:rounded-xl sm:h-14">
           APPLY NOW
