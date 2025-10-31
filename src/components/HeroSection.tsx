@@ -9,9 +9,9 @@ const HeroSection = () => {
 
   const handleVideoPlay = () => {
     setIsVideoPlaying(true);
-    const iframe = document.getElementById('youtube-video') as HTMLIFrameElement;
-    if (iframe) {
-      iframe.src = iframe.src.replace('autoplay=0', 'autoplay=1');
+    const video = document.getElementById('hero-video') as HTMLVideoElement;
+    if (video) {
+      video.play();
     }
   };
 
@@ -72,14 +72,15 @@ const HeroSection = () => {
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-glass backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-glass">
                 <div className="relative aspect-video bg-black rounded-xl overflow-hidden">
-                  <iframe
-                    id="youtube-video"
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/4GjOqOoKR48?start=17&autoplay=0&rel=0&modestbranding=1"
-                    title="Steven's Strategy Call Message"
-                    frameBorder="0"
-                    allowFullScreen
-                  />
+                  <video
+                    id="hero-video"
+                    className="w-full h-full object-cover"
+                    controls={isVideoPlaying}
+                    playsInline
+                  >
+                    <source src="https://storage.googleapis.com/msgsndr/cZ4d8uNLL9JqhpAPPjXg/media/68276d1980f93e16eaae1fc8.mov" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                   {!isVideoPlaying && (
                     <div 
                       className="absolute inset-0 bg-black/50 flex items-center justify-center cursor-pointer group"
