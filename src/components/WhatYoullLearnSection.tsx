@@ -56,14 +56,12 @@ const WhatYoullLearnSection = () => {
                 <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
               </div>
               
-              <h2 className="text-[36px] sm:text-4xl md:text-6xl font-black text-foreground mb-6 sm:mb-8 leading-[1.15] tracking-[-0.3px] sm:leading-tight sm:tracking-normal">
-                THE FASTEST WAY TO
-                <br />
+              <h2 className="text-[32px] sm:text-4xl md:text-6xl font-black text-foreground mb-6 sm:mb-8 leading-[1.15] tracking-[-0.5px] sm:leading-tight sm:tracking-normal max-w-[90%] sm:max-w-none mx-auto">
+                THE FASTEST WAY TO THE{" "}
                 <span className="bg-gradient-accent bg-clip-text text-transparent">
-                  THE ATHLETIC&nbsp;BODY
-                </span>
-                <br />
-                YOU'VE ALWAYS&nbsp;WANTED
+                  ATHLETIC BODY
+                </span>{" "}
+                YOU'VE ALWAYS WANTED
               </h2>
               
               <div className="w-24 h-1 bg-gradient-accent rounded-full mx-auto mb-6 sm:mb-8"></div>
