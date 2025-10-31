@@ -83,11 +83,11 @@ const WhatYoullLearnSection = () => {
 
             {/* Hero Image - Mobile only */}
             <div className="hero-media sm:hidden mt-5 px-6">
-              <div className="relative mx-auto" style={{ maxWidth: '520px', aspectRatio: '4/5' }}>
+              <div className="relative mx-auto" style={{ maxWidth: '520px', aspectRatio: '3/4' }}>
                 <img 
                   src={athleticHeroBg}
                   alt="Athletic transformation - fit physique"
-                  className="w-full h-full object-cover object-top rounded-2xl shadow-[var(--shadow-card)]"
+                  className="w-full h-full object-cover object-[center_20%] rounded-2xl shadow-[var(--shadow-card)]"
                   loading="eager"
                 />
               </div>
