@@ -31,9 +31,9 @@ const CTASection = ({ variant = "primary", urgency = "LIMITED SPOTS", className 
   return (
     <section className={`py-12 text-center ${className}`}>
       <div className="flex flex-col items-center gap-6">
-        <Button variant="cta" size="lg" className="w-full sm:w-auto group px-6 py-3 sm:px-10 sm:py-6 text-sm sm:text-lg">
+        <Button variant="cta" size="lg" className="w-full sm:w-auto group h-[52px] sm:h-auto text-base sm:text-lg rounded-[10px] sm:rounded-xl">
           APPLY NOW
-          <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </Button>
         
         <div className="flex items-center gap-3 text-accent/80">
