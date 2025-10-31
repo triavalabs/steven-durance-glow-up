@@ -2,72 +2,72 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqs = [
   {
-    question: "What Do I need to join the program? Do I need to train in a gym?",
-    answer: "Ideally yes but we can get you World Class Results from home!"
+    question: "What do I need to join the program? Do I need to train in a gym?",
+    answer: "Ideally, yes — but we can deliver world-class results right from home too."
   },
   {
-    question: "How Soon Will I Start Seeing Results?",
-    answer: "You will see progress within the first few weeks. This is the prime phase and some people move get super quick results while others take a tad longer. Everyone's body is different after all. That said, after 2 weeks is when it starts to really accelerate as we learn your body."
+    question: "How soon will I start seeing results?",
+    answer: "Most clients see progress in the first few weeks. After two weeks, things really accelerate as we dial in your plan."
   },
   {
-    question: "What Will I Learn During The Program?",
-    answer: "A lifestyle that you can maintain for the rest of your life."
+    question: "What will I learn during the program?",
+    answer: "A lifestyle you can maintain for life — built around what works best for your body."
   },
   {
-    question: "How Is This Program Different From Any Other Program?",
-    answer: "This program utilizes my unique metabolic priming nutritional approach using a form of carb cycling, so you can enjoy the food you love whilst getting world class results!"
+    question: "How is this program different from others?",
+    answer: "It uses my Metabolic Priming method — a science-based carb-cycling system that lets you enjoy food while transforming your body."
   },
   {
-    question: "How Do You Help Me Personally?",
-    answer: "You will receive weekly feedback videos and monthly Zoom calls to touch base and keep you on track. You can also DM directly through the app for 24/7 support!"
+    question: "How do you help me personally?",
+    answer: "You'll get weekly feedback videos, monthly Zoom calls, and 24/7 in-app support to keep you accountable and on track."
   },
   {
-    question: "Do I Get support When I Reach A Plateau?",
-    answer: "Yes! This is why this program is so successful. You continue to have weekly feedback that assesses at your progress. We always look for solutions together as this is a partnership."
+    question: "Do I get support when I hit a plateau?",
+    answer: "Yes. We assess, adjust, and break through together — that's what makes this program so effective."
   },
   {
-    question: "Do I Get A Step By Step Blueprint For Getting Into Shape?",
-    answer: "Yes, there is a clear plan in this coaching program and you will get clear personal goals with specific strategies to achieve them."
+    question: "Do I get a step-by-step blueprint for getting in shape?",
+    answer: "Absolutely. You'll receive a clear plan, tailored goals, and proven strategies for lasting results."
   },
   {
-    question: "Can I Still Have Dinner With My Family?",
-    answer: "Yes! The most important thing for success is being able to maintain the program and learn how to have structure so you can continue to enjoy your life and the food you love."
+    question: "Can I still have dinner with my family?",
+    answer: "Of course. Structure and balance are built in so you can enjoy life and still stay consistent."
   },
   {
-    question: "Should I Use Supplements?",
-    answer: "This depends on your goals. Some supplements have no added value and I will not recommend them. Some are a must to not only achieve your goals in a healthy way, but to live a consistently healthy life. It is, however, your choice whether to follow the advice or not. It is very important for the coaches to know whether or not you adhere to this advice because it can affect your results. Your health is the most important thing. Not everyone has the financial means to purchase all supplements, so we will designate the cost effective non-negotiable ones."
+    question: "Should I use supplements?",
+    answer: "Only if they add real value. We'll cover the must-haves, budget-friendly essentials, and safe options for your goals."
   },
   {
-    question: "Is This Program A Crash or Fad Diet?",
-    answer: "Not even close! The aim of the program is to give you longevity and an athletic look. Some people will be interested in losing weight while others are focused on adding mass. The goal is to keep eating as much as possible while your body fat diminishes."
+    question: "Is this a crash or fad diet?",
+    answer: "Not even close. The focus is longevity — building a strong, athletic body that lasts."
   },
   {
-    question: "What Happens After The Program?",
-    answer: "I will give you guidelines on what to do for your body and how to keep your results and build on them. This program is an educational with the goal of giving you GUARANTEED results whilst teaching you how to maintain them for the rest of your life."
+    question: "What happens after the program?",
+    answer: "You'll know exactly how to maintain and build on your results. This isn't just coaching — it's education for life."
   },
   {
-    question: "Can I Still Eat Out?",
-    answer: "Yes. This can be factored into your plan. You are given guidelines on what to do when eating out based on your goals."
+    question: "Can I still eat out?",
+    answer: "Yes — I'll show you how to navigate menus and make smart choices without restriction."
   },
   {
-    question: "Can It Be Combined With Day And Night Shifts?",
-    answer: "Yes. The schedule is created to fit your lifestyle and troubleshoot anything that's challenging. Day and night shifts do not have to have an adverse effect on the result."
+    question: "Can it fit around day and night shifts?",
+    answer: "Yes, the plan adapts to your lifestyle so your schedule never limits your progress."
   },
   {
-    question: "Can I Still Enjoy Holidays and Vacations?",
-    answer: "Absolutely. Strategies are applied to create structure/enjoyment (the 80/20 rule) while on vacation and during the holidays so you can continue to make progress and sustain your results without backsliding."
+    question: "Can I still enjoy holidays and vacations?",
+    answer: "Absolutely. We'll use an 80/20 approach so you can relax, recharge, and still maintain momentum."
   },
   {
-    question: "I Can't Bring Food To Work. Can This Be Solved?",
-    answer: "Yes. This coaching is based on macronutrients and how to combine them (whether you are tracking them or given rules when you aren't tracking them). This means you are not obliged to eat the same things over and over again."
+    question: "I can't bring food to work — can this be solved?",
+    answer: "Yes. The plan focuses on flexible macronutrients, not repetitive meals, so you can eat freely and still hit your goals."
   },
   {
-    question: "I Don't Like Certain Foods. Will This Be Taken Into Account?",
-    answer: "100%. You fill out an onboarding form detailing your lifestyle, food allergies & preferences, etc. All of this is worked into your plan."
+    question: "I don't like certain foods — will this be taken into account?",
+    answer: "100%. Your preferences and allergies are all built into your plan."
   },
   {
-    question: "I Don't Know How To Weight Train. How Will I Know How To Perform Each Exercise?",
-    answer: "You will be using the exclusive Stevendurance Coaching app system available on both Apple and Android phones. The app gives you the entire customized workout and every exercise has an example video and cues displaying how to perform the different movements."
+    question: "I don't know how to weight train — will I learn?",
+    answer: "Yes. The Stevendurance Coaching App includes demo videos and cues for every exercise so you feel confident training anywhere."
   }
 ];
 
