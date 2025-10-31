@@ -2,7 +2,7 @@ import stevenProfessional from "@/assets/steven-professional.png";
 import stevenDuranceLogo from "@/assets/stevendurance-logo.png";
 const StevensStorySection = () => {
   return (
-    <section className="pt-32 pb-24 bg-background relative overflow-hidden">
+    <section className="pb-24 bg-background relative overflow-hidden">
       {/* Premium Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/10"></div>
       <div className="absolute top-40 right-40 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
