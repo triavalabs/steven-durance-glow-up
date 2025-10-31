@@ -12,7 +12,7 @@ const CTASection = ({ variant = "primary", urgency = "LIMITED SPOTS", className 
     return (
       <section className={`py-8 text-center ${className}`}>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="outline-accent" size="lg" className="w-full sm:w-auto">
+          <Button variant="outline-accent" size="lg" className="w-auto">
             CHECK AVAILABILITY
           </Button>
           <div className="flex items-center gap-2 text-accent/70">
