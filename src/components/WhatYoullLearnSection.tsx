@@ -35,7 +35,7 @@ const WhatYoullLearnSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Premium Header Card */}
         <div className="max-w-4xl mx-auto mb-20">
-          <div className="bg-gradient-card border-2 border-accent/20 rounded-3xl pb-12 px-12 shadow-[var(--shadow-premium)] hover:shadow-[var(--shadow-hero)] transition-all duration-500">
+          <div className="bg-gradient-card border-2 border-accent/20 rounded-3xl p-12 shadow-[var(--shadow-premium)] hover:shadow-[var(--shadow-hero)] transition-all duration-500">
             <div className="text-center animate-fade-in-up">
               <div className="inline-flex items-center gap-3 bg-accent/20 px-6 py-3 rounded-full mb-8">
                 <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
