@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Play, Rocket, Phone } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import stevenLogo from "@/assets/stevendurance-logo.png";
+import stevenLogo from "@/assets/stevendurance-logo-new.png";
 const HeroSection = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const handleVideoPlay = () => {
