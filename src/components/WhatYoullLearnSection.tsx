@@ -35,39 +35,64 @@ const WhatYoullLearnSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Premium Header Card */}
-        <div className="max-w-4xl mx-auto mb-20">
+        <div className="hero max-w-[520px] sm:max-w-4xl mx-auto mb-20 py-8 sm:py-0">
           <div 
-            className="bg-gradient-card border-2 border-accent/20 rounded-3xl p-12 shadow-[var(--shadow-premium)] hover:shadow-[var(--shadow-hero)] transition-all duration-500 relative overflow-hidden"
+            className="sm:bg-gradient-card sm:border-2 sm:border-accent/20 sm:rounded-3xl sm:p-12 sm:shadow-[var(--shadow-premium)] sm:hover:shadow-[var(--shadow-hero)] transition-all duration-500 relative sm:overflow-hidden"
             style={{
-              backgroundImage: `url(${athleticHeroBg})`,
+              backgroundImage: typeof window !== 'undefined' && window.innerWidth >= 640 ? `url(${athleticHeroBg})` : 'none',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat'
             }}
           >
-            <div className="absolute inset-0 bg-gradient-card/98 md:bg-gradient-to-r md:from-background/95 md:via-background/90 md:to-transparent"></div>
-            <div className="text-center animate-fade-in-up relative z-10">
-              <div className="inline-flex items-center gap-3 bg-accent/20 px-6 py-3 rounded-full mb-8">
+            {/* Gradient overlay - desktop only */}
+            <div className="hidden sm:block absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-transparent"></div>
+            
+            {/* Text Content */}
+            <div className="hero-text text-center px-6 sm:px-0 animate-fade-in-up relative z-10">
+              <div className="inline-flex items-center gap-3 bg-accent/20 px-6 py-3 rounded-full mb-6 sm:mb-8">
                 <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
-                <span className="text-accent font-bold uppercase tracking-wider">Limited to 10 Clients</span>
+                <span className="text-accent font-bold uppercase tracking-wider text-sm">Limited to 10 Clients</span>
                 <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
               </div>
               
-              <h2 className="text-4xl md:text-6xl font-black text-foreground mb-8 leading-tight">
+              <h2 className="text-[36px] sm:text-4xl md:text-6xl font-black text-foreground mb-6 sm:mb-8 leading-[1.15] tracking-[-0.3px] sm:leading-tight sm:tracking-normal">
                 THE FASTEST WAY TO
                 <br />
                 <span className="bg-gradient-accent bg-clip-text text-transparent">
-                  THE ATHLETIC BODY
+                  THE ATHLETIC&nbsp;BODY
                 </span>
                 <br />
-                YOU'VE ALWAYS WANTED
+                YOU'VE ALWAYS&nbsp;WANTED
               </h2>
               
-              <div className="w-24 h-1 bg-gradient-accent rounded-full mx-auto mb-8"></div>
+              <div className="w-24 h-1 bg-gradient-accent rounded-full mx-auto mb-6 sm:mb-8"></div>
               
-              <p className="text-xl md:text-2xl text-muted-foreground font-medium max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base sm:text-xl md:text-2xl text-muted-foreground font-medium max-w-3xl mx-auto leading-[1.45] sm:leading-relaxed">
                 Stop wasting time with generic programs. Get the personalized coaching that actually works.
               </p>
+            </div>
+
+            {/* CTA Button - Mobile only */}
+            <div className="hero-cta sm:hidden mt-4 px-6">
+              <a 
+                href="#apply"
+                className="block w-full h-[52px] bg-gradient-accent text-accent-foreground font-bold text-base rounded-[10px] shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.2)] transition-all duration-300 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+              >
+                APPLY NOW
+              </a>
+            </div>
+
+            {/* Hero Image - Mobile only */}
+            <div className="hero-media sm:hidden mt-5 px-6">
+              <div className="relative mx-auto" style={{ maxWidth: '520px', aspectRatio: '4/5' }}>
+                <img 
+                  src={athleticHeroBg}
+                  alt="Athletic transformation - fit physique"
+                  className="w-full h-full object-cover object-top rounded-2xl shadow-[var(--shadow-card)]"
+                  loading="eager"
+                />
+              </div>
             </div>
           </div>
         </div>
