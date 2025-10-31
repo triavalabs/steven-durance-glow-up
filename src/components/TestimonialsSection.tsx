@@ -1,82 +1,115 @@
 import { Star, Shield, TrendingUp, Calendar, CheckCircle } from "lucide-react";
 
 // Import transformation images
-import marcusTransform from "@/assets/transformations/marcus-transformation.jpg";
-import davidTransform from "@/assets/transformations/david-transformation.jpg";
-import jamesTransform from "@/assets/transformations/james-transformation.jpg";
-import michaelTransform from "@/assets/transformations/michael-transformation.jpg";
-import alexTransform from "@/assets/transformations/alex-transformation.jpg";
+import client1Transform from "@/assets/transformations/client1-transformation.png";
+import client2Transform from "@/assets/transformations/client2-transformation.png";
+import client3Transform from "@/assets/transformations/client3-transformation.png";
+import client4Transform from "@/assets/transformations/client4-transformation.png";
+import client5Transform from "@/assets/transformations/client5-transformation.png";
+import client6Transform from "@/assets/transformations/client6-transformation.png";
+import client7Transform from "@/assets/transformations/client7-transformation.png";
+import client8Transform from "@/assets/transformations/client8-transformation.png";
+import client9Transform from "@/assets/transformations/client9-transformation.png";
 
 const testimonials = [
   {
-    name: "Marcus Chen",
-    role: "Software Engineer", 
-    location: "San Francisco",
-    quote: "Lost 25 lbs and gained incredible confidence. Steven's approach actually fits into my crazy work schedule.",
+    quote: "This program completely changed my life. The results speak for themselves and the journey was actually sustainable.",
     rating: 5,
-    result: "25 lbs lost in 6 months",
-    transformationImage: marcusTransform,
-    duration: "6 MONTHS",
-    weightLoss: "25 LBS",
+    result: "22 lbs lost in 8 weeks",
+    transformationImage: client1Transform,
+    duration: "8 WEEKS",
+    weightLoss: "22 LBS",
     verified: true,
-    bodyFatLoss: "8%",
-    muscleGain: "12 LBS"
+    bodyFatLoss: "7%",
+    muscleGain: "5 LBS"
   },
   {
-    name: "David Rodriguez",
-    role: "Marketing Director",
-    location: "New York",
-    quote: "Finally found a system that doesn't require me to live in the gym. The results speak for themselves.",
+    quote: "I never thought transformation could be this straightforward. The system works if you trust the process.",
     rating: 5,
-    result: "20 lbs lost in 4 months",
-    transformationImage: davidTransform,
-    duration: "4 MONTHS",
-    weightLoss: "20 LBS",
+    result: "18 lbs lost in 12 weeks",
+    transformationImage: client2Transform,
+    duration: "12 WEEKS",
+    weightLoss: "18 LBS",
     verified: true,
     bodyFatLoss: "6%",
     muscleGain: "8 LBS"
   },
   {
-    name: "James Thompson",
-    role: "Financial Advisor",
-    location: "Chicago",
-    quote: "Steven understands the unique challenges we face. His program is practical, sustainable, and it works.",
+    quote: "Best investment I've ever made in myself. The confidence and energy I have now is priceless.",
     rating: 5,
-    result: "30 lbs muscle gained",
-    transformationImage: jamesTransform,
-    duration: "8 MONTHS",
-    weightLoss: "30 LBS MUSCLE",
-    verified: true,
-    bodyFatLoss: "10%",
-    muscleGain: "30 LBS"
-  },
-  {
-    name: "Michael Park",
-    role: "Consultant",
-    location: "Los Angeles",
-    quote: "The confidence boost was immediate. I feel like a completely different person - stronger inside and out.",
-    rating: 5,
-    result: "Complete transformation",
-    transformationImage: michaelTransform,
-    duration: "5 MONTHS",
-    weightLoss: "15 LBS",
-    verified: true,
-    bodyFatLoss: "7%",
-    muscleGain: "10 LBS"
-  },
-  {
-    name: "Alex Martinez",
-    role: "Tech Executive",
-    location: "Austin",
-    quote: "Travel constantly for work, but Steven's system travels with me. Consistency has never been easier.",
-    rating: 5,
-    result: "18 lbs lost in 3 months",
-    transformationImage: alexTransform,
+    result: "25 lbs lost in 3 months",
+    transformationImage: client3Transform,
     duration: "3 MONTHS",
-    weightLoss: "18 LBS",
+    weightLoss: "25 LBS",
+    verified: true,
+    bodyFatLoss: "8%",
+    muscleGain: "6 LBS"
+  },
+  {
+    quote: "Finally found something that fits my busy lifestyle. No more excuses, just results.",
+    rating: 5,
+    result: "15 lbs muscle gained",
+    transformationImage: client4Transform,
+    duration: "4 MONTHS",
+    weightLoss: "15 LBS MUSCLE",
     verified: true,
     bodyFatLoss: "5%",
-    muscleGain: "6 LBS"
+    muscleGain: "15 LBS"
+  },
+  {
+    quote: "The accountability and guidance made all the difference. I'm stronger and more confident than ever.",
+    rating: 5,
+    result: "20 lbs lost in 10 weeks",
+    transformationImage: client5Transform,
+    duration: "10 WEEKS",
+    weightLoss: "20 LBS",
+    verified: true,
+    bodyFatLoss: "7%",
+    muscleGain: "4 LBS"
+  },
+  {
+    quote: "Sustainable approach that actually works long-term. This isn't a quick fix, it's a lifestyle change.",
+    rating: 5,
+    result: "28 lbs lost in 5 months",
+    transformationImage: client6Transform,
+    duration: "5 MONTHS",
+    weightLoss: "28 LBS",
+    verified: true,
+    bodyFatLoss: "9%",
+    muscleGain: "7 LBS"
+  },
+  {
+    quote: "I've tried everything else and nothing worked. This program delivered results I didn't think were possible.",
+    rating: 5,
+    result: "12 lbs muscle gained",
+    transformationImage: client7Transform,
+    duration: "3 MONTHS",
+    weightLoss: "12 LBS MUSCLE",
+    verified: true,
+    bodyFatLoss: "4%",
+    muscleGain: "12 LBS"
+  },
+  {
+    quote: "The personalized approach made me feel supported every step of the way. Results came faster than expected.",
+    rating: 5,
+    result: "16 lbs lost in 8 weeks",
+    transformationImage: client8Transform,
+    duration: "8 WEEKS",
+    weightLoss: "16 LBS",
+    verified: true,
+    bodyFatLoss: "6%",
+    muscleGain: "3 LBS"
+  },
+  {
+    quote: "Life-changing transformation. I look better, feel better, and have more energy than I've had in years.",
+    rating: 5,
+    result: "30 lbs lost in 6 months",
+    transformationImage: client9Transform,
+    duration: "6 MONTHS",
+    weightLoss: "30 LBS",
+    verified: true,
+    bodyFatLoss: "10%",
+    muscleGain: "8 LBS"
   }
 ];
 
@@ -125,7 +158,7 @@ const TestimonialsSection = () => {
               <div className="relative mb-6 overflow-hidden rounded-2xl group/image">
                 <img 
                   src={testimonial.transformationImage} 
-                  alt={`${testimonial.name} before and after transformation`}
+                  alt="Client transformation before and after"
                   className="w-full h-56 object-cover rounded-2xl transition-transform duration-700 group-hover/image:scale-105"
                 />
                 
@@ -173,24 +206,10 @@ const TestimonialsSection = () => {
               </blockquote>
               
               {/* Result Badge */}
-              <div className="bg-gradient-accent text-white px-4 py-2 rounded-xl text-sm font-semibold mb-6 inline-block shadow-lg">
+              <div className="bg-gradient-accent text-white px-4 py-2 rounded-xl text-sm font-semibold inline-block shadow-lg">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
                   {testimonial.result}
-                </div>
-              </div>
-              
-              {/* Author Info */}
-              <div className="border-t border-glass-border pt-4">
-                <div className="font-bold text-foreground group-hover:text-accent transition-colors text-lg">
-                  {testimonial.name}
-                </div>
-                <div className="text-muted-foreground text-sm font-medium">
-                  {testimonial.role}
-                </div>
-                <div className="text-muted-foreground text-sm flex items-center gap-1 mt-1">
-                  <div className="w-2 h-2 bg-accent rounded-full" />
-                  {testimonial.location}
                 </div>
               </div>
             </div>
