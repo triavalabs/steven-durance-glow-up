@@ -72,7 +72,7 @@ const HeroSection = () => {
               <div className="bg-gradient-glass backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-glass">
                 <div className="relative aspect-video bg-black rounded-xl overflow-hidden">
                   <video id="hero-video" className="w-full h-full object-cover" controls={isVideoPlaying} playsInline>
-                    <source src="https://storage.googleapis.com/msgsndr/cZ4d8uNLL9JqhpAPPjXg/media/68276d1980f93e16eaae1fc8.mov" type="video/mp4" />
+                    <source src="https://storage.googleapis.com/msgsndr/cZ4d8uNLL9JqhpAPPjXg/media/68276a7d87a1cb0b78aeb494.mov" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   {!isVideoPlaying && <div className="absolute inset-0 bg-black/50 flex items-center justify-center cursor-pointer group" onClick={handleVideoPlay}>
