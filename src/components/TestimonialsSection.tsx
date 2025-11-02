@@ -5,6 +5,7 @@ import jayTransform from "@/assets/transformations/jay-transformation.png";
 import eddieTransform from "@/assets/transformations/eddie-transformation.png";
 import chrisTransform from "@/assets/transformations/chris-transformation.jpg";
 import danielTransform from "@/assets/transformations/daniel-transformation.jpg";
+import mattTransform from "@/assets/transformations/matt-transformation.png";
 
 const testimonials = [
   {
@@ -28,6 +29,12 @@ const testimonials = [
   {
     name: "Daniel",
     transformationImage: danielTransform,
+    duration: "6 MONTHS",
+    verified: true,
+  },
+  {
+    name: "Matt",
+    transformationImage: mattTransform,
     duration: "6 MONTHS",
     verified: true,
   }
