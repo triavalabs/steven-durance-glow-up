@@ -73,7 +73,7 @@ const StevensStorySection = () => {
               {/* Enhanced Context */}
               <div className="space-y-8 mb-12">
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                  Steven understands the unique challenges busy professionals face. After years of 
+                  Steven understands the unique challenges busy LGBTQ+ professionals face. After years of 
                   struggling with inconsistent results and unsustainable approaches, he developed a 
                   <span className="text-accent font-semibold"> proven system that actually works</span> with your lifestyle.
                 </p>
