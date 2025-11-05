@@ -157,9 +157,9 @@ const TestimonialsSection = () => {
               
               <div className="text-center animate-fade-in-up group cursor-pointer" style={{ animationDelay: "0.2s" }}>
                 <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
-                  12
+                  6
                 </div>
-                <div className="text-muted-foreground font-semibold text-sm sm:text-base">Week Program</div>
+                <div className="text-muted-foreground font-semibold text-sm sm:text-base">Month Program</div>
                 <div className="text-xs text-muted-foreground/70 mt-1">Average duration</div>
               </div>
               
