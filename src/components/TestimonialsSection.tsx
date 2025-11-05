@@ -223,15 +223,9 @@ const TestimonialsSection = () => {
                 
                 {/* Image Info Overlay */}
                 <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-md rounded-lg p-4 text-white">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <div className="text-sm opacity-80">CLIENT TRANSFORMATION</div>
-                      <div className="font-bold text-lg">{selectedImage.name}</div>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-sm opacity-80">DURATION</div>
-                      <div className="font-bold">{selectedImage.duration}</div>
-                    </div>
+                  <div className="text-center">
+                    <div className="text-sm opacity-80">DURATION</div>
+                    <div className="font-bold text-lg">{selectedImage.duration}</div>
                   </div>
                 </div>
               </div>
