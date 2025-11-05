@@ -1,4 +1,10 @@
-import { Shield, CheckCircle } from "lucide-react";
+import { Shield, CheckCircle, X, ZoomIn } from "lucide-react";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogClose,
+} from "@/components/ui/dialog";
 
 // Import transformation images
 import jayTransform from "@/assets/transformations/jay-transformation.png";
@@ -62,6 +68,8 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
+  const [selectedImage, setSelectedImage] = useState<{ src: string; name: string; duration: string } | null>(null);
+
   return (
     <section className="pt-12 pb-24 sm:py-24 bg-background relative overflow-hidden">
       {/* Background Elements */}
@@ -103,7 +111,21 @@ const TestimonialsSection = () => {
               )}
               
               {/* Transformation Image with Overlay Stats */}
-              <div className="relative overflow-hidden rounded-2xl group/image">
+              <div 
+                className="relative overflow-hidden rounded-2xl group/image cursor-pointer"
+                onClick={() => setSelectedImage({ 
+                  src: testimonial.transformationImage, 
+                  name: testimonial.name, 
+                  duration: testimonial.duration 
+                })}
+              >
+                {/* Zoom indicator */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-full p-4">
+                    <ZoomIn className="w-8 h-8 text-primary" />
+                  </div>
+                </div>
+                
                 <img 
                   src={testimonial.transformationImage} 
                   alt={`${testimonial.name} transformation before and after`}
@@ -182,6 +204,41 @@ const TestimonialsSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Lightbox Dialog */}
+      <Dialog open={!!selectedImage} onOpenChange={(open) => !open && setSelectedImage(null)}>
+        <DialogContent className="max-w-7xl w-[95vw] h-[95vh] p-0 border-0 bg-black/95">
+          <DialogClose className="absolute top-4 right-4 z-50 rounded-full bg-white/10 backdrop-blur-sm p-2 hover:bg-white/20 transition-colors">
+            <X className="h-6 w-6 text-white" />
+          </DialogClose>
+          
+          {selectedImage && (
+            <div className="relative w-full h-full flex items-center justify-center p-8">
+              <div className="relative max-w-full max-h-full">
+                <img
+                  src={selectedImage.src}
+                  alt={`${selectedImage.name} transformation - full view`}
+                  className="max-w-full max-h-[85vh] object-contain rounded-lg animate-scale-in"
+                />
+                
+                {/* Image Info Overlay */}
+                <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-md rounded-lg p-4 text-white">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="text-sm opacity-80">CLIENT TRANSFORMATION</div>
+                      <div className="font-bold text-lg">{selectedImage.name}</div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-sm opacity-80">DURATION</div>
+                      <div className="font-bold">{selectedImage.duration}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
