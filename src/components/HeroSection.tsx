@@ -27,7 +27,7 @@ const HeroSection = () => {
           
           {/* Logo & Scarcity Banner */}
           <div className="mb-12 animate-fade-in-down">
-            <img src={stevenLogo} alt="StevenDurance Logo" className="h-16 mx-auto mb-8 opacity-95" />
+            <img src={stevenLogo} alt="StevenDurance Logo" className="h-16 mx-auto mb-8" />
             <div className="inline-flex items-center gap-3 bg-gradient-glass backdrop-blur-sm border border-accent/30 rounded-full px-8 py-4 shadow-glass">
               <div className="flex gap-1">
                 <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
