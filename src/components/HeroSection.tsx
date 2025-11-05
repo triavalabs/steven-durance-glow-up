@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Play, Rocket, Phone } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import stevenLogo from "@/assets/stevendurance-logo-latest.png";
+import videoPreview from "@/assets/video-preview.png";
 const HeroSection = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const handleVideoPlay = () => {
@@ -71,7 +72,7 @@ const HeroSection = () => {
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-glass backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-glass">
                 <div className="relative aspect-video bg-black rounded-xl overflow-hidden">
-                  <video id="hero-video" className="w-full h-full object-cover" controls={isVideoPlaying} playsInline>
+                  <video id="hero-video" className="w-full h-full object-cover" controls={isVideoPlaying} playsInline poster={videoPreview}>
                     <source src="https://storage.googleapis.com/msgsndr/cZ4d8uNLL9JqhpAPPjXg/media/660328833ac22349e5c97565.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
