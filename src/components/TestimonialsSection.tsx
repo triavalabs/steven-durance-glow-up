@@ -8,6 +8,7 @@ import danielTransform from "@/assets/transformations/daniel-transformation.jpg"
 import mattTransform from "@/assets/transformations/matt-transformation.png";
 import matt2Transform from "@/assets/transformations/matt2-transformation.png";
 import stevenTransform from "@/assets/transformations/steven-transformation.png";
+import sarahTransform from "@/assets/transformations/sarah-transformation.png";
 
 const testimonials = [
   {
@@ -50,6 +51,12 @@ const testimonials = [
     name: "Steven",
     transformationImage: stevenTransform,
     duration: "4 MONTHS",
+    verified: true,
+  },
+  {
+    name: "Sarah",
+    transformationImage: sarahTransform,
+    duration: "5 MONTHS",
     verified: true,
   }
 ];
