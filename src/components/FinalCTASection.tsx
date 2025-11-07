@@ -41,8 +41,7 @@ const FinalCTASection = () => {
           {/* Main CTA */}
           <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             <Button variant="hero" size="xl" className="group mb-8 text-base md:text-lg px-4 md:px-12 py-4 md:py-6">
-              <span className="hidden sm:inline">BOOK YOUR FREE FITNESS CALL</span>
-              <span className="sm:hidden">BOOK FREE CALL</span>
+              BOOK FREE CALL
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </Button>
             

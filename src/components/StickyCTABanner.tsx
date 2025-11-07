@@ -29,8 +29,7 @@ const StickyCTABanner = () => {
               variant="secondary" 
               className="bg-background/95 text-foreground hover:bg-background font-bold shadow-lg text-xs md:text-sm"
             >
-              <span className="hidden sm:inline">BOOK YOUR FREE FITNESS CALL</span>
-              <span className="sm:hidden">BOOK FREE CALL</span>
+              BOOK FREE CALL
             </Button>
             
             <button

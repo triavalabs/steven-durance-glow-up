@@ -92,7 +92,7 @@ const HeroSection = () => {
         }}>
             <Button variant="cta" size="xxl" className="shadow-glow">
               <Rocket className="w-5 h-5 mr-2" />
-              BOOK YOUR FREE FITNESS CALL
+              BOOK FREE CALL
             </Button>
           </div>
 
