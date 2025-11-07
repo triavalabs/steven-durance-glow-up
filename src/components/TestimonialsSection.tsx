@@ -240,45 +240,6 @@ const TestimonialsSection = () => {
           </p>
         </div>
         
-        {/* Progress Counter */}
-        <div className="text-center mb-4">
-          <p className="text-lg md:text-xl font-semibold">
-            <span className="text-2xl md:text-3xl font-bold bg-gradient-accent bg-clip-text text-transparent">
-              {current + 1}
-            </span>
-            <span className="text-muted-foreground mx-2">of</span>
-            <span className="text-2xl md:text-3xl font-bold bg-gradient-accent bg-clip-text text-transparent">
-              25
-            </span>
-            <span className="text-muted-foreground ml-2">Transformations</span>
-          </p>
-        </div>
-        
-        {/* Top Navigation Controls */}
-        <div className="flex items-center justify-center gap-4 md:gap-6 mb-8">
-          <button
-            onClick={() => carouselApi?.scrollPrev()}
-            className="group w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 shadow-lg"
-            aria-label="Previous transformations"
-          >
-            <ChevronLeft className="w-6 h-6 text-white group-hover:text-white transition-colors" />
-          </button>
-          
-          <div className="text-center px-4">
-            <p className="text-sm md:text-base text-muted-foreground font-semibold">
-              Swipe or use arrows to see more transformations
-            </p>
-          </div>
-          
-          <button
-            onClick={() => carouselApi?.scrollNext()}
-            className="group w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 shadow-lg"
-            aria-label="Next transformations"
-          >
-            <ChevronRight className="w-6 h-6 text-white group-hover:text-white transition-colors" />
-          </button>
-        </div>
-        
         <div className="relative max-w-7xl mx-auto mb-16">
           <Carousel
             opts={{
@@ -340,25 +301,7 @@ const TestimonialsSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden lg:flex -left-12" />
-            <CarouselNext className="hidden lg:flex -right-12" />
           </Carousel>
-          
-          {/* Pagination Dots */}
-          <div className="flex justify-center gap-2 mt-8">
-            {Array.from({ length: Math.ceil(testimonials.length / 4) }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => carouselApi?.scrollTo(index * 4)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  Math.floor(current / 4) === index 
-                    ? "w-8 bg-primary" 
-                    : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                }`}
-                aria-label={`Go to slide group ${index + 1}`}
-              />
-            ))}
-          </div>
         </div>
         
         {/* Enhanced Stats Section */}
