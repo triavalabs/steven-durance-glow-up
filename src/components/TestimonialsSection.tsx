@@ -1,18 +1,7 @@
 import { Shield, CheckCircle, X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogClose,
-} from "@/components/ui/dialog";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-  type CarouselApi,
-} from "@/components/ui/carousel";
+import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, type CarouselApi } from "@/components/ui/carousel";
 
 // Import transformation images
 import jayTransform from "@/assets/transformations/jay-transformation.png";
@@ -40,183 +29,154 @@ import stevenTransform from "@/assets/transformations/steven-transformation.jpg"
 import thaiTransform from "@/assets/transformations/thai-transformation.png";
 import toriTransform from "@/assets/transformations/tori-transformation.png";
 import ericsTransform from "@/assets/transformations/erics-transformation.jpg";
-
-const testimonials = [
-  {
-    name: "Jay",
-    transformationImage: jayTransform,
-    duration: "6 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Eddie",
-    transformationImage: eddieTransform,
-    duration: "6 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Chris",
-    transformationImage: chrisTransform,
-    duration: "6 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Daniel",
-    transformationImage: danielTransform,
-    duration: "6 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Matt",
-    transformationImage: mattTransform,
-    duration: "6 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Matt",
-    transformationImage: matt2Transform,
-    duration: "6 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Anon",
-    transformationImage: anonTransform,
-    duration: "4 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Anon B",
-    transformationImage: anonbTransform,
-    duration: "2.5 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Anon C",
-    transformationImage: anoncTransform,
-    duration: "5 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Tori",
-    transformationImage: toriTransform,
-    duration: "4 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Anthony",
-    transformationImage: anthonyTransform,
-    duration: "4.5 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Charlie",
-    transformationImage: charlieTransform,
-    duration: "3.5 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Eric",
-    transformationImage: ericTransform,
-    duration: "3 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Eric S",
-    transformationImage: ericsTransform,
-    duration: "4 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Grayson",
-    transformationImage: graysonTransform,
-    duration: "8 WEEKS",
-    verified: true,
-  },
-  {
-    name: "Igo",
-    transformationImage: igoTransform,
-    duration: "4 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Matthew",
-    transformationImage: matthewTransform,
-    duration: "6 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Steven",
-    transformationImage: stevenTransform,
-    duration: "4 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Nate",
-    transformationImage: nateTransform,
-    duration: "6 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Neal",
-    transformationImage: nealTransform,
-    duration: "3 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Nick B",
-    transformationImage: nickbTransform,
-    duration: "4 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Nick",
-    transformationImage: nickTransform,
-    duration: "3 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Rachel",
-    transformationImage: rachelTransform,
-    duration: "3 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Russell",
-    transformationImage: russelTransform,
-    duration: "5 MONTHS",
-    verified: true,
-  },
-  {
-    name: "Thai",
-    transformationImage: thaiTransform,
-    duration: "6 MONTHS",
-    verified: true,
-  },
-];
-
+const testimonials = [{
+  name: "Jay",
+  transformationImage: jayTransform,
+  duration: "6 MONTHS",
+  verified: true
+}, {
+  name: "Eddie",
+  transformationImage: eddieTransform,
+  duration: "6 MONTHS",
+  verified: true
+}, {
+  name: "Chris",
+  transformationImage: chrisTransform,
+  duration: "6 MONTHS",
+  verified: true
+}, {
+  name: "Daniel",
+  transformationImage: danielTransform,
+  duration: "6 MONTHS",
+  verified: true
+}, {
+  name: "Matt",
+  transformationImage: mattTransform,
+  duration: "6 MONTHS",
+  verified: true
+}, {
+  name: "Matt",
+  transformationImage: matt2Transform,
+  duration: "6 MONTHS",
+  verified: true
+}, {
+  name: "Anon",
+  transformationImage: anonTransform,
+  duration: "4 MONTHS",
+  verified: true
+}, {
+  name: "Anon B",
+  transformationImage: anonbTransform,
+  duration: "2.5 MONTHS",
+  verified: true
+}, {
+  name: "Anon C",
+  transformationImage: anoncTransform,
+  duration: "5 MONTHS",
+  verified: true
+}, {
+  name: "Tori",
+  transformationImage: toriTransform,
+  duration: "4 MONTHS",
+  verified: true
+}, {
+  name: "Anthony",
+  transformationImage: anthonyTransform,
+  duration: "4.5 MONTHS",
+  verified: true
+}, {
+  name: "Charlie",
+  transformationImage: charlieTransform,
+  duration: "3.5 MONTHS",
+  verified: true
+}, {
+  name: "Eric",
+  transformationImage: ericTransform,
+  duration: "3 MONTHS",
+  verified: true
+}, {
+  name: "Eric S",
+  transformationImage: ericsTransform,
+  duration: "4 MONTHS",
+  verified: true
+}, {
+  name: "Grayson",
+  transformationImage: graysonTransform,
+  duration: "8 WEEKS",
+  verified: true
+}, {
+  name: "Igo",
+  transformationImage: igoTransform,
+  duration: "4 MONTHS",
+  verified: true
+}, {
+  name: "Matthew",
+  transformationImage: matthewTransform,
+  duration: "6 MONTHS",
+  verified: true
+}, {
+  name: "Steven",
+  transformationImage: stevenTransform,
+  duration: "4 MONTHS",
+  verified: true
+}, {
+  name: "Nate",
+  transformationImage: nateTransform,
+  duration: "6 MONTHS",
+  verified: true
+}, {
+  name: "Neal",
+  transformationImage: nealTransform,
+  duration: "3 MONTHS",
+  verified: true
+}, {
+  name: "Nick B",
+  transformationImage: nickbTransform,
+  duration: "4 MONTHS",
+  verified: true
+}, {
+  name: "Nick",
+  transformationImage: nickTransform,
+  duration: "3 MONTHS",
+  verified: true
+}, {
+  name: "Rachel",
+  transformationImage: rachelTransform,
+  duration: "3 MONTHS",
+  verified: true
+}, {
+  name: "Russell",
+  transformationImage: russelTransform,
+  duration: "5 MONTHS",
+  verified: true
+}, {
+  name: "Thai",
+  transformationImage: thaiTransform,
+  duration: "6 MONTHS",
+  verified: true
+}];
 const TestimonialsSection = () => {
-  const [selectedImage, setSelectedImage] = useState<{ src: string; name: string; duration: string } | null>(null);
+  const [selectedImage, setSelectedImage] = useState<{
+    src: string;
+    name: string;
+    duration: string;
+  } | null>(null);
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
   // Track carousel position for pagination
   useEffect(() => {
     if (!carouselApi) return;
-
     const updateCurrent = () => {
       setCurrent(carouselApi.selectedScrollSnap());
     };
-
     carouselApi.on("select", updateCurrent);
     updateCurrent();
-
     return () => {
       carouselApi.off("select", updateCurrent);
     };
   }, [carouselApi]);
-
-  return (
-    <section className="pb-16 md:pb-24 bg-background relative overflow-hidden">
+  return <section className="pb-16 md:pb-24 bg-background relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-subtle opacity-50" />
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
@@ -256,11 +216,7 @@ const TestimonialsSection = () => {
         
         {/* Top Navigation Controls */}
         <div className="flex items-center justify-center gap-4 md:gap-6 mb-8">
-          <button
-            onClick={() => carouselApi?.scrollPrev()}
-            className="group w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 shadow-lg"
-            aria-label="Previous transformations"
-          >
+          <button onClick={() => carouselApi?.scrollPrev()} className="group w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 shadow-lg" aria-label="Previous transformations">
             <ChevronLeft className="w-6 h-6 text-white group-hover:text-white transition-colors" />
           </button>
           
@@ -270,48 +226,33 @@ const TestimonialsSection = () => {
             </p>
           </div>
           
-          <button
-            onClick={() => carouselApi?.scrollNext()}
-            className="group w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 shadow-lg"
-            aria-label="Next transformations"
-          >
+          <button onClick={() => carouselApi?.scrollNext()} className="group w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 shadow-lg" aria-label="Next transformations">
             <ChevronRight className="w-6 h-6 text-white group-hover:text-white transition-colors" />
           </button>
         </div>
         
         <div className="relative max-w-7xl mx-auto mb-10 md:mb-16">
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full"
-            setApi={setCarouselApi}
-          >
+          <Carousel opts={{
+          align: "start",
+          loop: true
+        }} className="w-full" setApi={setCarouselApi}>
             <CarouselContent className="-ml-4">
-              {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/4">
-                  <div 
-                    className="group relative bg-gradient-glass backdrop-blur-md border border-glass-border rounded-3xl p-4 shadow-[var(--shadow-glass)] hover:shadow-[var(--shadow-hero)] transition-all duration-500 hover:-translate-y-3 animate-scale-in overflow-hidden h-full"
-                    style={{ animationDelay: `${index * 0.05}s` }}
-                  >
+              {testimonials.map((testimonial, index) => <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/4">
+                  <div className="group relative bg-gradient-glass backdrop-blur-md border border-glass-border rounded-3xl p-4 shadow-[var(--shadow-glass)] hover:shadow-[var(--shadow-hero)] transition-all duration-500 hover:-translate-y-3 animate-scale-in overflow-hidden h-full" style={{
+                animationDelay: `${index * 0.05}s`
+              }}>
                     {/* Verification Badge */}
-                    {testimonial.verified && (
-                      <div className="absolute top-4 right-4 z-20 bg-success/90 backdrop-blur-sm text-white px-2 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                    {testimonial.verified && <div className="absolute top-4 right-4 z-20 bg-success/90 backdrop-blur-sm text-white px-2 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
                         <CheckCircle className="w-3 h-3" />
                         VERIFIED
-                      </div>
-                    )}
+                      </div>}
                     
                     {/* Transformation Image with Overlay Stats */}
-                    <div 
-                      className="relative overflow-hidden rounded-2xl group/image cursor-pointer"
-                      onClick={() => setSelectedImage({ 
-                        src: testimonial.transformationImage, 
-                        name: testimonial.name, 
-                        duration: testimonial.duration 
-                      })}
-                    >
+                    <div className="relative overflow-hidden rounded-2xl group/image cursor-pointer" onClick={() => setSelectedImage({
+                  src: testimonial.transformationImage,
+                  name: testimonial.name,
+                  duration: testimonial.duration
+                })}>
                       {/* Zoom indicator */}
                       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300">
                         <div className="bg-white/90 backdrop-blur-sm rounded-full p-4">
@@ -319,11 +260,7 @@ const TestimonialsSection = () => {
                         </div>
                       </div>
                       
-                      <img 
-                        src={testimonial.transformationImage} 
-                        alt={`${testimonial.name} transformation before and after`}
-                        className="w-full h-80 object-cover rounded-2xl transition-transform duration-700 group-hover/image:scale-105"
-                      />
+                      <img src={testimonial.transformationImage} alt={`${testimonial.name} transformation before and after`} className="w-full h-80 object-cover rounded-2xl transition-transform duration-700 group-hover/image:scale-105" />
                       
                       {/* Gradient Overlay for Stats */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent rounded-2xl" />
@@ -337,8 +274,7 @@ const TestimonialsSection = () => {
                       </div>
                     </div>
                   </div>
-                </CarouselItem>
-              ))}
+                </CarouselItem>)}
             </CarouselContent>
             <CarouselPrevious className="hidden lg:flex -left-12" />
             <CarouselNext className="hidden lg:flex -right-12" />
@@ -350,7 +286,7 @@ const TestimonialsSection = () => {
           {/* Glass Background */}
           <div className="absolute inset-0 bg-gradient-glass backdrop-blur-xl rounded-3xl border border-glass-border" />
           
-          <div className="relative z-10 py-12 px-8">
+          <div className="relative z-10 px-8 py-0">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">
                 THE NUMBERS DON'T LIE
@@ -367,7 +303,9 @@ const TestimonialsSection = () => {
                 <div className="text-xs text-muted-foreground/70 mt-1">Since 2019</div>
               </div>
               
-              <div className="text-center animate-fade-in-up group cursor-pointer" style={{ animationDelay: "0.1s" }}>
+              <div className="text-center animate-fade-in-up group cursor-pointer" style={{
+              animationDelay: "0.1s"
+            }}>
                 <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
                   97%
                 </div>
@@ -375,7 +313,9 @@ const TestimonialsSection = () => {
                 <div className="text-xs text-muted-foreground/70 mt-1">Complete program</div>
               </div>
               
-              <div className="text-center animate-fade-in-up group cursor-pointer" style={{ animationDelay: "0.2s" }}>
+              <div className="text-center animate-fade-in-up group cursor-pointer" style={{
+              animationDelay: "0.2s"
+            }}>
                 <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
                   6
                 </div>
@@ -383,7 +323,9 @@ const TestimonialsSection = () => {
                 <div className="text-xs text-muted-foreground/70 mt-1">Average duration</div>
               </div>
               
-              <div className="text-center animate-fade-in-up group cursor-pointer" style={{ animationDelay: "0.3s" }}>
+              <div className="text-center animate-fade-in-up group cursor-pointer" style={{
+              animationDelay: "0.3s"
+            }}>
                 <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
                   24/7
                 </div>
@@ -404,20 +346,15 @@ const TestimonialsSection = () => {
       </div>
 
       {/* Lightbox Dialog */}
-      <Dialog open={!!selectedImage} onOpenChange={(open) => !open && setSelectedImage(null)}>
+      <Dialog open={!!selectedImage} onOpenChange={open => !open && setSelectedImage(null)}>
         <DialogContent className="max-w-7xl w-[95vw] h-[95vh] p-0 border-0 bg-black/95">
           <DialogClose className="absolute top-4 right-4 z-50 rounded-full bg-white/10 backdrop-blur-sm p-2 hover:bg-white/20 transition-colors">
             <X className="h-6 w-6 text-white" />
           </DialogClose>
           
-          {selectedImage && (
-            <div className="relative w-full h-full flex items-center justify-center p-8">
+          {selectedImage && <div className="relative w-full h-full flex items-center justify-center p-8">
               <div className="relative max-w-full max-h-full">
-                <img
-                  src={selectedImage.src}
-                  alt={`${selectedImage.name} transformation - full view`}
-                  className="max-w-full max-h-[85vh] object-contain rounded-lg animate-scale-in"
-                />
+                <img src={selectedImage.src} alt={`${selectedImage.name} transformation - full view`} className="max-w-full max-h-[85vh] object-contain rounded-lg animate-scale-in" />
                 
                 {/* Image Info Overlay */}
                 <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-md rounded-lg p-4 text-white">
@@ -427,12 +364,9 @@ const TestimonialsSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          )}
+            </div>}
         </DialogContent>
       </Dialog>
-    </section>
-  );
+    </section>;
 };
-
 export default TestimonialsSection;
