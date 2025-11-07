@@ -79,7 +79,7 @@ const StevensStorySection = () => {
               </div>
               
               {/* Premium Stats Grid */}
-              <div className="bg-gradient-card border border-accent/20 rounded-xl p-6 shadow-[var(--shadow-card)] my-0 px-0 py-[20px]">
+              <div className="bg-gradient-card border border-accent/20 rounded-xl p-6 shadow-[var(--shadow-card)] my-0 px-0 pt-[20px] pb-0">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                   <div className="text-center">
                     <div className="text-3xl md:text-4xl font-black text-accent mb-2 animate-counter-up">500+</div>
