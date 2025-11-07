@@ -30,6 +30,11 @@ import thaiTransform from "@/assets/transformations/thai-transformation.png";
 import toriTransform from "@/assets/transformations/tori-transformation.png";
 import ericsTransform from "@/assets/transformations/erics-transformation.jpg";
 const testimonials = [{
+  name: "Steven",
+  transformationImage: stevenTransform,
+  duration: "4 MONTHS",
+  verified: true
+}, {
   name: "Jay",
   transformationImage: jayTransform,
   duration: "6 MONTHS",
@@ -113,11 +118,6 @@ const testimonials = [{
   name: "Matthew",
   transformationImage: matthewTransform,
   duration: "6 MONTHS",
-  verified: true
-}, {
-  name: "Steven",
-  transformationImage: stevenTransform,
-  duration: "4 MONTHS",
   verified: true
 }, {
   name: "Nate",
