@@ -10,17 +10,27 @@ import CTASection from "@/components/CTASection";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background text-foreground antialiased">
+    <main className="min-h-screen bg-background text-foreground antialiased space-y-0 md:space-y-0">
       <HeroSection />
-      <WhatYoullLearnSection />
+      <div className="pb-0 md:pb-0">
+        <WhatYoullLearnSection />
+      </div>
       <CTASection variant="secondary" urgency="ONLY 3 SPOTS LEFT" className="bg-gradient-card" />
-      <StevensStorySection />
+      <div className="pb-0 md:pb-0">
+        <StevensStorySection />
+      </div>
       <CTASection urgency="FINAL CALL" className="bg-gradient-subtle" />
-      <TestimonialsSection />
+      <div className="pb-0 md:pb-0">
+        <TestimonialsSection />
+      </div>
       <CTASection urgency="LIMITED TIME" className="bg-gradient-card" />
-      <ValuePropositionSection />
+      <div className="pb-0 md:pb-0">
+        <ValuePropositionSection />
+      </div>
       <CTASection urgency="ACT NOW" className="bg-gradient-subtle" />
-      <FAQSection />
+      <div className="pb-0 md:pb-0">
+        <FAQSection />
+      </div>
       <FinalCTASection />
       <StickyCTABanner />
     </main>
