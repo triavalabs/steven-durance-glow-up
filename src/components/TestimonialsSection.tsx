@@ -265,7 +265,7 @@ const TestimonialsSection = () => {
           </button>
           
           <div className="text-center px-4">
-            <p className="text-sm md:text-base text-muted-foreground font-semibold">
+            <p className="text-sm md:text-base text-primary font-semibold">
               Swipe or use arrows to see more transformations
             </p>
           </div>
