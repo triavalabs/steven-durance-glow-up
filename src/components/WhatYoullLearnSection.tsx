@@ -1,33 +1,25 @@
 import { Target, Zap, MapPin, Heart } from "lucide-react";
 import athleticBodyImage from "@/assets/athletic-body-result.png";
 import athleticHeroBg from "@/assets/athletic-hero-bg.png";
-
-const learningPoints = [
-  {
-    icon: Target,
-    title: "Personal 1:1 Coaching",
-    description: "Get a personalized plan that teaches you exactly what your body needs—and how to keep your results for life."
-  },
-  {
-    icon: Zap,
-    title: "Customized App Access",
-    description: "Exclusive access to Steven's custom app with your personalized workout and nutrition plans."
-  },
-  {
-    icon: MapPin,
-    title: "Sustainable Nutrition Strategy",
-    description: "Learn the flexible nutrition approach that fits your lifestyle without restrictive dieting."
-  },
-  {
-    icon: Heart,
-    title: "Guaranteed Results",
-    description: "Follow the system and see results in 90 days, or get your money back - no questions asked."
-  }
-];
-
+const learningPoints = [{
+  icon: Target,
+  title: "Personal 1:1 Coaching",
+  description: "Get a personalized plan that teaches you exactly what your body needs—and how to keep your results for life."
+}, {
+  icon: Zap,
+  title: "Customized App Access",
+  description: "Exclusive access to Steven's custom app with your personalized workout and nutrition plans."
+}, {
+  icon: MapPin,
+  title: "Sustainable Nutrition Strategy",
+  description: "Learn the flexible nutrition approach that fits your lifestyle without restrictive dieting."
+}, {
+  icon: Heart,
+  title: "Guaranteed Results",
+  description: "Follow the system and see results in 90 days, or get your money back - no questions asked."
+}];
 const WhatYoullLearnSection = () => {
-  return (
-    <section className="pt-0 md:pt-24 bg-gradient-premium relative overflow-hidden">
+  return <section className="pt-0 md:pt-24 bg-gradient-premium relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-accent/10"></div>
       <div className="absolute top-20 right-20 w-32 h-32 bg-accent/10 rounded-full blur-3xl"></div>
@@ -35,13 +27,10 @@ const WhatYoullLearnSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Premium Header Card */}
-        <div className="hero max-w-[520px] sm:max-w-4xl mx-auto mb-20 py-8 sm:py-0">
-          <div 
-            className="sm:bg-gradient-card sm:border-2 sm:border-accent/20 sm:rounded-3xl sm:p-12 sm:shadow-[var(--shadow-premium)] sm:hover:shadow-[var(--shadow-hero)] transition-all duration-500 relative sm:overflow-hidden sm:bg-cover sm:bg-center sm:bg-no-repeat"
-            style={{
-              backgroundImage: typeof window !== 'undefined' && window.innerWidth >= 640 ? `url(${athleticHeroBg})` : 'none'
-            }}
-          >
+        <div className="hero max-w-[520px] sm:max-w-4xl mx-auto mb-20 py-8 sm:py-0 my-[40px]">
+          <div className="sm:bg-gradient-card sm:border-2 sm:border-accent/20 sm:rounded-3xl sm:p-12 sm:shadow-[var(--shadow-premium)] sm:hover:shadow-[var(--shadow-hero)] transition-all duration-500 relative sm:overflow-hidden sm:bg-cover sm:bg-center sm:bg-no-repeat" style={{
+          backgroundImage: typeof window !== 'undefined' && window.innerWidth >= 640 ? `url(${athleticHeroBg})` : 'none'
+        }}>
             {/* Gradient overlay - desktop only */}
             <div className="hidden sm:block absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-transparent"></div>
             
@@ -70,23 +59,18 @@ const WhatYoullLearnSection = () => {
 
             {/* CTA Button - Mobile only */}
             <div className="hero-cta sm:hidden mt-4 px-6">
-              <a 
-                href="#apply"
-                className="block w-full h-[52px] bg-gradient-accent text-accent-foreground font-bold text-base rounded-[10px] shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.2)] transition-all duration-300 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
-              >
+              <a href="#apply" className="block w-full h-[52px] bg-gradient-accent text-accent-foreground font-bold text-base rounded-[10px] shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.2)] transition-all duration-300 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">
                 BOOK FREE CALL
               </a>
             </div>
 
             {/* Hero Image - Mobile only */}
             <div className="hero-media sm:hidden mt-5 px-6">
-              <div className="relative mx-auto" style={{ maxWidth: '520px', aspectRatio: '3/4' }}>
-                <img 
-                  src={athleticHeroBg}
-                  alt="Athletic transformation - fit physique"
-                  className="w-full h-full object-cover object-[center_20%] rounded-2xl shadow-[var(--shadow-card)]"
-                  loading="eager"
-                />
+              <div className="relative mx-auto" style={{
+              maxWidth: '520px',
+              aspectRatio: '3/4'
+            }}>
+                <img src={athleticHeroBg} alt="Athletic transformation - fit physique" className="w-full h-full object-cover object-[center_20%] rounded-2xl shadow-[var(--shadow-card)]" loading="eager" />
               </div>
             </div>
           </div>
@@ -94,12 +78,9 @@ const WhatYoullLearnSection = () => {
 
         {/* Premium Benefits Grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-          {learningPoints.map((point, index) => (
-            <div 
-              key={index}
-              className="group bg-gradient-card border border-accent/10 p-8 rounded-2xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-premium)] hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 animate-scale-in"
-              style={{ animationDelay: `${index * 0.15}s` }}
-            >
+          {learningPoints.map((point, index) => <div key={index} className="group bg-gradient-card border border-accent/10 p-8 rounded-2xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-premium)] hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 animate-scale-in" style={{
+          animationDelay: `${index * 0.15}s`
+        }}>
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[var(--shadow-button)]">
@@ -115,8 +96,7 @@ const WhatYoullLearnSection = () => {
                   </p>
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Athletic Body Showcase */}
@@ -152,22 +132,18 @@ const WhatYoullLearnSection = () => {
                 </div>
               </div>
               
-              <div className="hidden lg:block animate-scale-in self-end" style={{ animationDelay: "0.3s" }}>
+              <div className="hidden lg:block animate-scale-in self-end" style={{
+              animationDelay: "0.3s"
+            }}>
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-accent/20 blur-2xl rounded-t-3xl"></div>
-                  <img 
-                    src={athleticBodyImage} 
-                    alt="Athletic transformation result showing muscular physique"
-                    className="relative w-full max-w-md mx-auto rounded-t-3xl shadow-[var(--shadow-hero)] hover:scale-105 transition-all duration-500"
-                  />
+                  <img src={athleticBodyImage} alt="Athletic transformation result showing muscular physique" className="relative w-full max-w-md mx-auto rounded-t-3xl shadow-[var(--shadow-hero)] hover:scale-105 transition-all duration-500" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default WhatYoullLearnSection;
