@@ -27,7 +27,7 @@ const learningPoints = [
 
 const WhatYoullLearnSection = () => {
   return (
-    <section className="pt-24 bg-gradient-premium relative overflow-hidden">
+    <section className="pt-0 md:pt-24 bg-gradient-premium relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-accent/10"></div>
       <div className="absolute top-20 right-20 w-32 h-32 bg-accent/10 rounded-full blur-3xl"></div>

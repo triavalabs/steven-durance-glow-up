@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 
 const FinalCTASection = () => {
   return (
-    <section className="py-24 bg-gradient-hero relative overflow-hidden">
+    <section className="py-0 md:py-24 bg-gradient-hero relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/90" />
       <div className="absolute top-20 left-20 w-40 h-40 bg-accent/10 rounded-full blur-3xl animate-pulse" />
