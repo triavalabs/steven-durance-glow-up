@@ -30,7 +30,7 @@ const HeroSection = () => {
             <img 
               src={stevenLogo} 
               alt="Steven Durance Coaching logo" 
-              className="h-16 mx-auto mb-8"
+              className="h-16 w-auto mx-auto mb-8 object-contain"
               width="200"
               height="64"
               loading="eager"
@@ -57,11 +57,14 @@ const HeroSection = () => {
           animationDelay: "0.2s"
         }}>
             <h1 className="text-display font-black leading-tight mb-8">
-              <span className="block text-foreground mb-2">Transform Your Body in 90 Days</span>
+              <span className="block text-foreground mb-2">EXCLUSIVE</span>
               <span className="bg-gradient-accent bg-clip-text text-transparent block mb-4">
-                1:1 Coaching for Busy Professionals
+                1:1 COACHING
               </span>
             </h1>
+            <p className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Transform Your Body in 90 Days
+            </p>
             <p className="text-body-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-medium">
               LOSE FAT • BUILD MUSCLE • REVEAL YOUR 6-PACK
               <span className="block text-accent font-bold mt-2">
