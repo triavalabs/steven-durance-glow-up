@@ -7,14 +7,12 @@ import FAQSection from "@/components/FAQSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import StickyCTABanner from "@/components/StickyCTABanner";
 import CTASection from "@/components/CTASection";
-
 const Index = () => {
-  return (
-    <main className="min-h-screen bg-background text-foreground antialiased space-y-0 md:space-y-0">
+  return <main className="min-h-screen bg-background text-foreground antialiased space-y-0 md:space-y-0">
       <HeroSection />
       <WhatYoullLearnSection />
       <CTASection variant="secondary" urgency="ONLY 3 SPOTS LEFT" className="bg-gradient-card" />
-      <StevensStorySection />
+      <StevensStorySection className="my-0 py-0" />
       <CTASection urgency="FINAL CALL" className="bg-gradient-subtle" />
       <TestimonialsSection />
       <CTASection urgency="LIMITED TIME" className="bg-gradient-card" />
@@ -23,8 +21,6 @@ const Index = () => {
       <FAQSection />
       <FinalCTASection />
       <StickyCTABanner />
-    </main>
-  );
+    </main>;
 };
-
 export default Index;
