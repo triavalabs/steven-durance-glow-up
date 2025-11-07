@@ -216,14 +216,14 @@ const TestimonialsSection = () => {
   }, [carouselApi]);
 
   return (
-    <section className="pt-0 pb-0 sm:py-24 bg-background relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-background relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-subtle opacity-50" />
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-20 animate-fade-in-up">
+        <div className="text-center mb-12 md:mb-20 animate-fade-in-up">
           <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6">
             <Shield className="w-4 h-4" />
             VERIFIED TRANSFORMATIONS
@@ -279,7 +279,7 @@ const TestimonialsSection = () => {
           </button>
         </div>
         
-        <div className="relative max-w-7xl mx-auto mb-16">
+        <div className="relative max-w-7xl mx-auto mb-10 md:mb-16">
           <Carousel
             opts={{
               align: "start",

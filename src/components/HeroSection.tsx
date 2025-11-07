@@ -22,11 +22,11 @@ const HeroSection = () => {
       </div>
       
       {/* Content Container */}
-      <div className="relative z-10 container mx-auto px-6 pt-4 md:pt-20">
+      <div className="relative z-10 container mx-auto px-6 pt-8 pb-12 md:pt-20 md:pb-0">
         <div className="max-w-6xl mx-auto text-center">
           
           {/* Logo & Scarcity Banner */}
-          <div className="mb-12 animate-fade-in-down">
+          <div className="mb-8 md:mb-12 animate-fade-in-down">
             <img src={stevenLogo} alt="StevenDurance Logo" className="h-16 mx-auto mb-8" />
             <div className="inline-flex items-center gap-3 bg-gradient-glass backdrop-blur-sm border border-accent/30 rounded-full px-8 py-4 shadow-glass">
               <div className="flex gap-1">
@@ -45,7 +45,7 @@ const HeroSection = () => {
           </div>
 
           {/* Main Headline */}
-          <div className="mb-16 animate-fade-in-up" style={{
+          <div className="mb-10 md:mb-16 animate-fade-in-up" style={{
           animationDelay: "0.2s"
         }}>
             <h1 className="text-display font-black leading-tight mb-8">
@@ -66,7 +66,7 @@ const HeroSection = () => {
           </div>
 
           {/* Premium Video Section */}
-          <div className="mb-16 animate-scale-in" style={{
+          <div className="mb-10 md:mb-16 animate-scale-in" style={{
           animationDelay: "0.4s"
         }}>
             <div className="max-w-4xl mx-auto">
@@ -87,7 +87,7 @@ const HeroSection = () => {
           </div>
 
           {/* Premium CTAs */}
-          <div className="flex flex-col md:flex-row gap-6 justify-center mb-12 animate-fade-in-up" style={{
+          <div className="flex flex-col md:flex-row gap-6 justify-center mb-8 md:mb-12 animate-fade-in-up" style={{
           animationDelay: "0.6s"
         }}>
             <Button variant="cta" size="xxl" className="shadow-glow flex-col gap-2">

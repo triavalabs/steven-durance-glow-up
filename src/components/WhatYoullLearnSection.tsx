@@ -77,7 +77,7 @@ const WhatYoullLearnSection = () => {
         </div>
 
         {/* Premium Benefits Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto mb-10 md:mb-16">
           {learningPoints.map((point, index) => <div key={index} className="group bg-gradient-card border border-accent/10 p-8 rounded-2xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-premium)] hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 animate-scale-in" style={{
           animationDelay: `${index * 0.15}s`
         }}>
