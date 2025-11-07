@@ -343,22 +343,6 @@ const TestimonialsSection = () => {
             <CarouselPrevious className="hidden lg:flex -left-12" />
             <CarouselNext className="hidden lg:flex -right-12" />
           </Carousel>
-          
-          {/* Pagination Dots */}
-          <div className="flex justify-center gap-2 mt-8">
-            {Array.from({ length: Math.ceil(testimonials.length / 4) }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => carouselApi?.scrollTo(index * 4)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  Math.floor(current / 4) === index 
-                    ? "w-8 bg-primary" 
-                    : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                }`}
-                aria-label={`Go to slide group ${index + 1}`}
-              />
-            ))}
-          </div>
         </div>
         
         {/* Enhanced Stats Section */}
