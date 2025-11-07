@@ -32,7 +32,7 @@ const CTASection = ({
       </section>;
   }
   return <section className={`py-6 sm:py-8 text-center ${className}`}>
-      <div className="flex flex-col items-center gap-6 mt-0 pt-0 pb-0 md:mt-0 md:pt-[19px] mt-[100px] my-[44px]">
+      <div className="flex flex-col items-center gap-3 md:gap-4">
         <Button variant="cta" size="lg" className="w-auto mx-auto group px-6 sm:px-12 text-base sm:text-lg rounded-[10px] sm:rounded-xl sm:h-14">
           BOOK FREE CALL
           <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
