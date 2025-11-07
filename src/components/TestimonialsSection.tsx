@@ -216,7 +216,7 @@ const TestimonialsSection = () => {
   }, [carouselApi]);
 
   return (
-    <section className="py-16 md:py-24 bg-background relative overflow-hidden">
+    <section className="pb-16 md:pb-24 bg-background relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-subtle opacity-50" />
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
