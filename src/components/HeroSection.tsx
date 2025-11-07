@@ -94,10 +94,6 @@ const HeroSection = () => {
               <Rocket className="w-5 h-5 mr-2" />
               APPLY NOW
             </Button>
-            <Button variant="glass" size="xl">
-              <Phone className="w-6 h-6" />
-              CHECK AVAILABILITY
-            </Button>
           </div>
 
           {/* Trust Indicators */}
