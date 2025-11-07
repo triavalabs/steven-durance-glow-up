@@ -22,7 +22,7 @@ const HeroSection = () => {
       </div>
       
       {/* Content Container */}
-      <div className="relative z-10 container mx-auto px-6 pt-8 md:pt-20">
+      <div className="relative z-10 container mx-auto px-6 pt-4 md:pt-20">
         <div className="max-w-6xl mx-auto text-center">
           
           {/* Logo & Scarcity Banner */}
