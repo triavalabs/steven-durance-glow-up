@@ -1,7 +1,13 @@
 import stevenProfessional from "@/assets/steven-professional.png";
 import stevenDuranceLogo from "@/assets/stevendurance-logo.png";
-const StevensStorySection = () => {
-  return <section className="py-16 md:py-24 bg-background relative overflow-hidden">
+import { cn } from "@/lib/utils";
+
+interface StevensStorySectionProps {
+  className?: string;
+}
+
+const StevensStorySection = ({ className }: StevensStorySectionProps) => {
+  return <section className={cn("pt-16 md:pt-24 pb-0 bg-background relative overflow-hidden", className)}>
       {/* Premium Background Elements */}
       <div className="absolute top-40 right-40 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-40 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
