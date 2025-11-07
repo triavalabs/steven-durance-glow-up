@@ -29,7 +29,7 @@ const StickyCTABanner = () => {
               variant="secondary" 
               className="bg-background/95 text-foreground hover:bg-background font-bold shadow-lg text-xs md:text-sm"
             >
-              BOOK FREE CALL
+              Find Your Plan
             </Button>
             
             <button
