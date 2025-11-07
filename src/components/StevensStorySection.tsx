@@ -1,8 +1,7 @@
 import stevenProfessional from "@/assets/steven-professional.png";
 import stevenDuranceLogo from "@/assets/stevendurance-logo.png";
 const StevensStorySection = () => {
-  return (
-    <section className="pb-24 bg-background relative overflow-hidden">
+  return <section className="pb-24 bg-background relative overflow-hidden">
       {/* Premium Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/10"></div>
       <div className="absolute top-40 right-40 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
@@ -31,11 +30,7 @@ const StevensStorySection = () => {
                   <div className="absolute inset-4 bg-accent/10 blur-xl rounded-2xl" />
                   
                   <div className="relative">
-                    <img 
-                      src={stevenProfessional} 
-                      alt="Steven - Professional Fitness Coach" 
-                      className="relative w-full rounded-2xl shadow-[var(--shadow-hero)] border-2 border-accent/30 hover:border-accent/50 transition-all duration-500" 
-                    />
+                    <img src={stevenProfessional} alt="Steven - Professional Fitness Coach" className="relative w-full rounded-2xl shadow-[var(--shadow-hero)] border-2 border-accent/30 hover:border-accent/50 transition-all duration-500" />
                     <div className="absolute inset-8 bg-gradient-to-t from-background/30 to-transparent rounded-2xl pointer-events-none" />
                   </div>
                 </div>
@@ -84,7 +79,7 @@ const StevensStorySection = () => {
               </div>
               
               {/* Premium Stats Grid */}
-              <div className="bg-gradient-card border border-accent/20 rounded-xl p-6 shadow-[var(--shadow-card)]">
+              <div className="bg-gradient-card border border-accent/20 rounded-xl p-6 shadow-[var(--shadow-card)] my-0 px-0 py-[20px]">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                   <div className="text-center">
                     <div className="text-3xl md:text-4xl font-black text-accent mb-2 animate-counter-up">500+</div>
@@ -110,7 +105,6 @@ const StevensStorySection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default StevensStorySection;
