@@ -27,15 +27,7 @@ const HeroSection = () => {
           
           {/* Logo & Scarcity Banner */}
           <div className="mb-8 md:mb-12 animate-fade-in-down">
-            <img 
-              src={stevenLogo} 
-              alt="Steven Durance Coaching logo" 
-              className="h-16 w-auto mx-auto mb-8 object-contain"
-              width="200"
-              height="64"
-              loading="eager"
-              decoding="async"
-            />
+            <img src={stevenLogo} alt="Steven Durance Coaching logo" className="h-16 w-auto mx-auto mb-8 object-contain" width="200" height="64" loading="eager" decoding="async" />
             <div className="inline-flex items-center gap-3 bg-gradient-glass backdrop-blur-sm border border-accent/30 rounded-full px-8 py-4 shadow-glass">
               <div className="flex gap-1">
                 <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
@@ -67,9 +59,7 @@ const HeroSection = () => {
             </p>
             <p className="text-body-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-medium">
               LOSE FAT • BUILD MUSCLE • REVEAL YOUR 6-PACK
-              <span className="block text-accent font-bold mt-2">
-                Join 500+ Men Who've Already Transformed Their Lives
-              </span>
+              <span className="block text-accent font-bold mt-2">Join 500+ Who've Already Transformed Their Lives</span>
             </p>
           </div>
 
@@ -80,14 +70,7 @@ const HeroSection = () => {
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-glass backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-glass">
                 <div className="relative aspect-video bg-black rounded-xl overflow-hidden">
-                  <video 
-                    id="hero-video" 
-                    className="w-full h-full object-cover" 
-                    controls={isVideoPlaying} 
-                    playsInline 
-                    poster={videoPreview}
-                    aria-label="Steven Durance coaching program introduction video"
-                  >
+                  <video id="hero-video" className="w-full h-full object-cover" controls={isVideoPlaying} playsInline poster={videoPreview} aria-label="Steven Durance coaching program introduction video">
                     <source src="https://storage.googleapis.com/msgsndr/cZ4d8uNLL9JqhpAPPjXg/media/660328833ac22349e5c97565.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
@@ -123,12 +106,7 @@ const HeroSection = () => {
           <div className="flex flex-col md:flex-row gap-6 justify-center mb-8 md:mb-12 animate-fade-in-up" style={{
           animationDelay: "0.6s"
         }}>
-            <Button 
-              variant="cta" 
-              size="xxl" 
-              className="shadow-glow"
-              aria-label="Book free strategy call with Steven Durance"
-            >
+            <Button variant="cta" size="xxl" className="shadow-glow" aria-label="Book free strategy call with Steven Durance">
               Find Your Plan
             </Button>
           </div>
