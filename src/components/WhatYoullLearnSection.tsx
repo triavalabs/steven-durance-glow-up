@@ -36,13 +36,13 @@ const WhatYoullLearnSection = () => {
             
             {/* Text Content */}
             <div className="hero-text text-center px-6 sm:px-0 animate-fade-in-up relative z-10">
-              <div className="inline-flex items-center gap-3 bg-accent/20 px-6 py-3 rounded-full mb-6 sm:mb-8">
+              <div className="inline-flex items-center gap-3 bg-accent/20 px-6 py-3 rounded-full mb-8 sm:mb-12">
                 <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
                 <span className="text-accent font-bold uppercase tracking-wider text-sm">Limited to 10 Clients</span>
                 <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
               </div>
               
-              <h2 className="text-[32px] sm:text-4xl md:text-6xl font-black text-foreground mb-6 sm:mb-8 leading-[1.15] tracking-[-0.5px] sm:leading-tight sm:tracking-normal max-w-[90%] sm:max-w-none mx-auto">
+              <h2 className="text-[32px] sm:text-4xl md:text-6xl font-black text-foreground mb-8 sm:mb-12 leading-[1.15] tracking-[-0.5px] sm:leading-tight sm:tracking-normal max-w-[90%] sm:max-w-none mx-auto">
                 THE FASTEST WAY TO THE{" "}
                 <span className="bg-gradient-accent bg-clip-text text-transparent">
                   ATHLETIC BODY
@@ -50,7 +50,7 @@ const WhatYoullLearnSection = () => {
                 YOU'VE ALWAYS WANTED
               </h2>
               
-              <div className="w-24 h-1 bg-gradient-accent rounded-full mx-auto mb-6 sm:mb-8"></div>
+              <div className="w-24 h-1 bg-gradient-accent rounded-full mx-auto mb-8 sm:mb-10"></div>
               
               <p className="text-base sm:text-xl md:text-2xl text-muted-foreground font-medium max-w-3xl mx-auto leading-[1.45] sm:leading-relaxed">
                 Stop wasting time with generic programs. Get the personalized coaching that actually works.
