@@ -1,4 +1,4 @@
-import { Shield, CheckCircle, X, ZoomIn } from "lucide-react";
+import { Shield, CheckCircle, X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import {
   Dialog,
@@ -238,6 +238,31 @@ const TestimonialsSection = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             These aren't stock photos or paid actors. These are real busy professionals who transformed their bodies and lives using Steven's proven system.
           </p>
+        </div>
+        
+        {/* Top Navigation Controls */}
+        <div className="flex items-center justify-center gap-4 md:gap-6 mb-8">
+          <button
+            onClick={() => carouselApi?.scrollPrev()}
+            className="group w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 shadow-lg"
+            aria-label="Previous transformations"
+          >
+            <ChevronLeft className="w-6 h-6 text-white group-hover:text-white transition-colors" />
+          </button>
+          
+          <div className="text-center px-4">
+            <p className="text-sm md:text-base text-muted-foreground font-semibold">
+              Swipe or use arrows to see more transformations
+            </p>
+          </div>
+          
+          <button
+            onClick={() => carouselApi?.scrollNext()}
+            className="group w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 shadow-lg"
+            aria-label="Next transformations"
+          >
+            <ChevronRight className="w-6 h-6 text-white group-hover:text-white transition-colors" />
+          </button>
         </div>
         
         <div className="relative max-w-7xl mx-auto mb-16">
