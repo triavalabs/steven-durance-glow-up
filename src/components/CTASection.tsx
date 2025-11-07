@@ -1,16 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 interface CTASectionProps {
   variant?: "primary" | "secondary";
   urgency?: string;
   className?: string;
 }
-
-const CTASection = ({ variant = "primary", urgency = "LIMITED SPOTS", className = "" }: CTASectionProps) => {
+const CTASection = ({
+  variant = "primary",
+  urgency = "LIMITED SPOTS",
+  className = ""
+}: CTASectionProps) => {
   if (variant === "secondary") {
-    return (
-      <section className={`py-16 text-center ${className}`}>
+    return <section className={`py-16 text-center ${className}`}>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button variant="outline-accent" size="lg" className="w-auto">
             BOOK FREE CALL
@@ -18,19 +19,20 @@ const CTASection = ({ variant = "primary", urgency = "LIMITED SPOTS", className 
           <div className="flex items-center gap-2 text-accent/70">
             <div className="flex gap-1">
               <div className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse"></div>
-              <div className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" style={{ animationDelay: "0.2s" }}></div>
-              <div className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" style={{ animationDelay: "0.4s" }}></div>
+              <div className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" style={{
+              animationDelay: "0.2s"
+            }}></div>
+              <div className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" style={{
+              animationDelay: "0.4s"
+            }}></div>
             </div>
             <span className="font-bold text-sm">{urgency}</span>
           </div>
         </div>
-      </section>
-    );
+      </section>;
   }
-
-  return (
-    <section className={`pb-12 sm:py-12 text-center ${className}`}>
-      <div className="flex flex-col items-center gap-6">
+  return <section className={`pb-12 sm:py-12 text-center ${className}`}>
+      <div className="flex flex-col items-center gap-6 my-0 py-[19px]">
         <Button variant="cta" size="lg" className="w-auto mx-auto group px-6 sm:px-12 text-base sm:text-lg rounded-[10px] sm:rounded-xl sm:h-14">
           BOOK FREE CALL
           <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
@@ -39,16 +41,18 @@ const CTASection = ({ variant = "primary", urgency = "LIMITED SPOTS", className 
         <div className="flex items-center gap-3 text-accent/80">
           <div className="flex gap-1">
             <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
-            <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" style={{ animationDelay: "0.3s" }}></div>
-            <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" style={{ animationDelay: "0.6s" }}></div>
+            <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" style={{
+            animationDelay: "0.3s"
+          }}></div>
+            <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" style={{
+            animationDelay: "0.6s"
+          }}></div>
           </div>
           <p className="font-black text-orange-400">
             {urgency} — SECURE YOUR SPOT
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTASection;
