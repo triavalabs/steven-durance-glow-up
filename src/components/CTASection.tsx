@@ -11,7 +11,7 @@ const CTASection = ({
   className = ""
 }: CTASectionProps) => {
   if (variant === "secondary") {
-    return <section className={`py-6 sm:py-8 text-center ${className}`}>
+    return <section className="py-6 sm:py-8 text-center">
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center py-[21px] my-0">
           <Button variant="outline-accent" size="lg" className="w-auto">
             BOOK FREE CALL
@@ -31,7 +31,7 @@ const CTASection = ({
         </div>
       </section>;
   }
-  return <section className={`pb-2 text-center ${className}`}>
+  return <section className="pb-2 text-center">
       <div className="flex flex-col items-center gap-3 mb-[49px] mt-6 md:mt-[49px]">
         <Button variant="cta" size="lg" className="w-auto mx-auto group px-6 sm:px-12 text-base sm:text-lg rounded-[10px] sm:rounded-xl sm:h-14">
           BOOK FREE CALL
