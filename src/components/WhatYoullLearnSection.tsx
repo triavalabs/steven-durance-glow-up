@@ -27,7 +27,7 @@ const WhatYoullLearnSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Premium Header Card */}
-        <div className="hero max-w-[520px] sm:max-w-4xl mx-auto mb-20 py-8 sm:py-0 my-[40px]">
+        <div className="hero max-w-[520px] sm:max-w-4xl mx-auto mb-0 py-8 sm:py-0 my-[40px]">
           <div className="sm:bg-gradient-card sm:border-2 sm:border-accent/20 sm:rounded-3xl sm:p-12 sm:shadow-[var(--shadow-premium)] sm:hover:shadow-[var(--shadow-hero)] transition-all duration-500 relative sm:overflow-hidden sm:bg-cover sm:bg-center sm:bg-no-repeat" style={{
           backgroundImage: typeof window !== 'undefined' && window.innerWidth >= 640 ? `url(${athleticHeroBg})` : 'none'
         }}>
