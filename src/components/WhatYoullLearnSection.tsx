@@ -65,7 +65,7 @@ const WhatYoullLearnSection = () => {
             </div>
 
             {/* Hero Image - Mobile only */}
-            <div className="hero-media sm:hidden mt-5 px-6">
+            <div className="hero-media sm:hidden mt-5 px-6 my-[77px]">
               <div className="relative mx-auto" style={{
               maxWidth: '520px',
               aspectRatio: '3/4'
