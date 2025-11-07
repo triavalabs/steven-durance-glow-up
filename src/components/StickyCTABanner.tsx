@@ -28,6 +28,7 @@ const StickyCTABanner = () => {
             <Button 
               variant="secondary" 
               className="bg-background/95 text-foreground hover:bg-background font-bold shadow-lg text-xs md:text-sm"
+              aria-label="Book free strategy call with Steven Durance"
             >
               Find Your Plan
             </Button>
@@ -35,9 +36,9 @@ const StickyCTABanner = () => {
             <button
               onClick={() => setIsVisible(false)}
               className="text-accent-foreground/70 hover:text-accent-foreground transition-colors p-1 hover:bg-background/20 rounded-lg"
-              aria-label="Close banner"
+              aria-label="Close sticky banner"
             >
-              <X className="w-4 h-4" />
+              <X className="w-4 h-4" aria-hidden="true" />
             </button>
           </div>
         </div>

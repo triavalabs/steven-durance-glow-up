@@ -78,8 +78,12 @@ const LifestyleSection = () => {
               <div className="relative">
                 <img 
                   src={lifestyleBalance} 
-                  alt="Balanced lifestyle - travel, healthy food, fitness, and relaxation" 
+                  alt="Lifestyle coaching — balanced fitness and life — sustainable results" 
                   className="w-full rounded-2xl shadow-[var(--shadow-hero)]"
+                  loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="400"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent rounded-2xl" />
               </div>

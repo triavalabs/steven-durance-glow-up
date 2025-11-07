@@ -13,7 +13,12 @@ const CTASection = ({
   if (variant === "secondary") {
     return <section className="py-6 sm:py-8 text-center">
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center py-[21px] my-0">
-          <Button variant="outline-accent" size="lg" className="w-auto">
+          <Button 
+            variant="outline-accent" 
+            size="lg" 
+            className="w-auto"
+            aria-label="Book free strategy call with Steven Durance"
+          >
             Find Your Plan
           </Button>
           <div className="flex items-center gap-2 text-accent/70">
@@ -33,9 +38,14 @@ const CTASection = ({
   }
   return <section className="pb-2 text-center">
       <div className="flex flex-col items-center gap-3 mb-[49px] mt-16 md:mt-[49px]">
-        <Button variant="cta" size="lg" className="w-auto mx-auto group px-6 sm:px-12 text-base sm:text-lg rounded-[10px] sm:rounded-xl sm:h-14">
+        <Button 
+          variant="cta" 
+          size="lg" 
+          className="w-auto mx-auto group px-6 sm:px-12 text-base sm:text-lg rounded-[10px] sm:rounded-xl sm:h-14"
+          aria-label="Book free strategy call with Steven Durance"
+        >
           Find Your Plan
-          <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+          <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
         </Button>
         
         <div className="flex items-center gap-3 text-accent/80">

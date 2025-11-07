@@ -350,10 +350,16 @@ const TestimonialsSection = () => {
         <DialogContent className="max-w-7xl w-[95vw] h-[95vh] p-0 border-0 bg-black/95">
           {selectedImage && <div className="relative w-full h-full flex items-center justify-center p-8">
               <div className="relative max-w-full max-h-full">
-                <DialogClose className="absolute -top-12 right-0 z-50 rounded-full bg-white/10 backdrop-blur-sm p-2 hover:bg-white/20 transition-colors">
-                  <X className="h-6 w-6 text-white" />
+                <DialogClose className="absolute -top-12 right-0 z-50 rounded-full bg-white/10 backdrop-blur-sm p-2 hover:bg-white/20 transition-colors" aria-label="Close image">
+                  <X className="h-6 w-6 text-white" aria-hidden="true" />
                 </DialogClose>
-                <img src={selectedImage.src} alt={`${selectedImage.name} transformation - full view`} className="max-w-full max-h-[85vh] object-contain rounded-lg animate-scale-in" />
+                <img 
+                  src={selectedImage.src} 
+                  alt={`Before-after transformation — ${selectedImage.name} — full view`} 
+                  className="max-w-full max-h-[85vh] object-contain rounded-lg animate-scale-in"
+                  loading="eager"
+                  decoding="async"
+                />
                 
                 {/* Image Info Overlay */}
                 <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-md rounded-lg p-4 text-white">
