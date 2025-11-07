@@ -12,7 +12,7 @@ const CTASection = ({
 }: CTASectionProps) => {
   if (variant === "secondary") {
     return <section className={`py-6 sm:py-8 text-center ${className}`}>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center py-[21px] my-0">
           <Button variant="outline-accent" size="lg" className="w-auto">
             BOOK FREE CALL
           </Button>
