@@ -240,6 +240,20 @@ const TestimonialsSection = () => {
           </p>
         </div>
         
+        {/* Progress Counter */}
+        <div className="text-center mb-4">
+          <p className="text-lg md:text-xl font-semibold">
+            <span className="text-2xl md:text-3xl font-bold bg-gradient-accent bg-clip-text text-transparent">
+              {current + 1}
+            </span>
+            <span className="text-muted-foreground mx-2">of</span>
+            <span className="text-2xl md:text-3xl font-bold bg-gradient-accent bg-clip-text text-transparent">
+              25
+            </span>
+            <span className="text-muted-foreground ml-2">Transformations</span>
+          </p>
+        </div>
+        
         {/* Top Navigation Controls */}
         <div className="flex items-center justify-center gap-4 md:gap-6 mb-8">
           <button
