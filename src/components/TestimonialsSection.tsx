@@ -39,6 +39,7 @@ import russelTransform from "@/assets/transformations/russel-transformation.jpg"
 import stevenTransform from "@/assets/transformations/steven-transformation.jpg";
 import thaiTransform from "@/assets/transformations/thai-transformation.png";
 import toriTransform from "@/assets/transformations/tori-transformation.png";
+import ericsTransform from "@/assets/transformations/erics-transformation.jpg";
 
 const testimonials = [
   {
@@ -121,7 +122,7 @@ const testimonials = [
   },
   {
     name: "Eric S",
-    transformationImage: "https://drive.google.com/uc?export=view&id=17T3tquRkJCLylwL9oH6tZcyNpABqzxhw",
+    transformationImage: ericsTransform,
     duration: "4 MONTHS",
     verified: true,
   },
