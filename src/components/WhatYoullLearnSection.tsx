@@ -70,7 +70,7 @@ const WhatYoullLearnSection = () => {
               maxWidth: '520px',
               aspectRatio: '3/4'
             }}>
-                <img src={athleticHeroBg} alt="Athletic transformation - fit physique" className="w-full h-full object-cover object-[center_30%] rounded-2xl shadow-[var(--shadow-card)]" loading="eager" />
+                <img src={athleticHeroBg} alt="Athletic transformation - fit physique" className="w-full h-full object-cover object-[center_40%] rounded-2xl shadow-[var(--shadow-card)]" loading="eager" />
               </div>
             </div>
           </div>
