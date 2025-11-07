@@ -126,10 +126,9 @@ const HeroSection = () => {
             <Button 
               variant="cta" 
               size="xxl" 
-              className="shadow-glow flex-col gap-2"
+              className="shadow-glow"
               aria-label="Book free strategy call with Steven Durance"
             >
-              <Rocket className="w-6 h-6" aria-hidden="true" />
               Find Your Plan
             </Button>
           </div>
