@@ -21,6 +21,24 @@ import chrisTransform from "@/assets/transformations/chris-transformation.jpg";
 import danielTransform from "@/assets/transformations/daniel-transformation.jpg";
 import mattTransform from "@/assets/transformations/matt-transformation.png";
 import matt2Transform from "@/assets/transformations/matt2-transformation.png";
+import anonTransform from "@/assets/transformations/anon-transformation.jpg";
+import anonbTransform from "@/assets/transformations/anonb-transformation.jpg";
+import anoncTransform from "@/assets/transformations/anonc-transformation.jpg";
+import anthonyTransform from "@/assets/transformations/anthony-transformation.png";
+import charlieTransform from "@/assets/transformations/charlie-transformation.jpg";
+import ericTransform from "@/assets/transformations/eric-transformation.png";
+import graysonTransform from "@/assets/transformations/grayson-transformation.jpg";
+import igoTransform from "@/assets/transformations/igo-transformation.jpg";
+import matthewTransform from "@/assets/transformations/matthew-transformation.jpg";
+import nateTransform from "@/assets/transformations/nate-transformation.png";
+import nealTransform from "@/assets/transformations/neal-transformation.jpg";
+import nickTransform from "@/assets/transformations/nick-transformation.jpg";
+import nickbTransform from "@/assets/transformations/nickb-transformation.jpg";
+import rachelTransform from "@/assets/transformations/rachel-transformation.jpg";
+import russelTransform from "@/assets/transformations/russel-transformation.jpg";
+import stevenTransform from "@/assets/transformations/steven-transformation.jpg";
+import thaiTransform from "@/assets/transformations/thai-transformation.png";
+import toriTransform from "@/assets/transformations/tori-transformation.png";
 
 const testimonials = [
   {
@@ -61,43 +79,43 @@ const testimonials = [
   },
   {
     name: "Anon",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1KHcDPG4CLilDRANR-4fReD7zHWsE3jPI",
+    transformationImage: anonTransform,
     duration: "4 MONTHS",
     verified: true,
   },
   {
     name: "Anon B",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1qsf1BLZiqjoo0vCf-n8XoAsymLqE8VQN",
+    transformationImage: anonbTransform,
     duration: "2.5 MONTHS",
     verified: true,
   },
   {
     name: "Anon C",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1-Jz_2gDV0cDx4nqpkztWZHgoPABnTE6t",
+    transformationImage: anoncTransform,
     duration: "5 MONTHS",
     verified: true,
   },
   {
     name: "Tori",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1PyWvgqypUKuxoM8Olh7XVpiOU3kWvqJT",
+    transformationImage: toriTransform,
     duration: "4 MONTHS",
     verified: true,
   },
   {
     name: "Anthony",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1FAjMUf2c0ps1W1Fta3mFTeW8IaqNGTlY",
+    transformationImage: anthonyTransform,
     duration: "4.5 MONTHS",
     verified: true,
   },
   {
     name: "Charlie",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1r08XtKG2kEobLXUI8CoAroPqF8EaJKcA",
+    transformationImage: charlieTransform,
     duration: "3.5 MONTHS",
     verified: true,
   },
   {
     name: "Eric",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1vBZxUsfVzylsxiKpqNgjkFryY0pcS0Uc",
+    transformationImage: ericTransform,
     duration: "3 MONTHS",
     verified: true,
   },
@@ -109,67 +127,67 @@ const testimonials = [
   },
   {
     name: "Grayson",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1nxsx3-zz-S1kVQNSb3xZ_jmTOsPHcgNe",
+    transformationImage: graysonTransform,
     duration: "8 WEEKS",
     verified: true,
   },
   {
     name: "Igo",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1OMuKlXN1OHOFacP4X2lcx401caVNAvIZ",
+    transformationImage: igoTransform,
     duration: "4 MONTHS",
     verified: true,
   },
   {
     name: "Matthew",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1_gahGzXfm-mt6KCNy5CQQH26emeYIFNH",
+    transformationImage: matthewTransform,
     duration: "6 MONTHS",
     verified: true,
   },
   {
     name: "Steven",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1G1aYiUFbzqxAjlIHeZs0WftOgzwmobki",
+    transformationImage: stevenTransform,
     duration: "4 MONTHS",
     verified: true,
   },
   {
     name: "Nate",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1ZVOa4x-m6XRVEO9-5H9AsQuOt05lNj74",
+    transformationImage: nateTransform,
     duration: "6 MONTHS",
     verified: true,
   },
   {
     name: "Neal",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1cTrVfokk_KBjTfE7YBpWWQjJl2403YHi",
+    transformationImage: nealTransform,
     duration: "3 MONTHS",
     verified: true,
   },
   {
-    name: "Nick",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1duQXzEuEkqIuIJ1D6KXB_srP0RAOrRfo",
+    name: "Nick B",
+    transformationImage: nickbTransform,
     duration: "4 MONTHS",
     verified: true,
   },
   {
     name: "Nick",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1k7p0GKIFsvrNKUah5jKHf1Xd7X3EdEnT",
+    transformationImage: nickTransform,
     duration: "3 MONTHS",
     verified: true,
   },
   {
     name: "Rachel",
-    transformationImage: "https://drive.google.com/uc?export=view&id=11p0Y8SC30HAORXKJaoJ3K1b6odYsTXRQ",
+    transformationImage: rachelTransform,
     duration: "3 MONTHS",
     verified: true,
   },
   {
     name: "Russell",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1lr2Vp0QfcF6oXE0QkR2PawIv3ZrUvNIH",
+    transformationImage: russelTransform,
     duration: "5 MONTHS",
     verified: true,
   },
   {
     name: "Thai",
-    transformationImage: "https://drive.google.com/uc?export=view&id=1I_EO_nCZzM6RS3eleBZBBJn0mkni3u7s",
+    transformationImage: thaiTransform,
     duration: "6 MONTHS",
     verified: true,
   },
