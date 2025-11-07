@@ -90,8 +90,8 @@ const HeroSection = () => {
           <div className="flex flex-col md:flex-row gap-6 justify-center mb-12 animate-fade-in-up" style={{
           animationDelay: "0.6s"
         }}>
-            <Button variant="cta" size="xxl" className="shadow-glow">
-              <Rocket className="w-5 h-5 mr-2" />
+            <Button variant="cta" size="xxl" className="shadow-glow flex-col gap-2">
+              <Rocket className="w-6 h-6" />
               BOOK FREE CALL
             </Button>
           </div>
