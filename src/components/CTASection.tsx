@@ -31,7 +31,7 @@ const CTASection = ({
         </div>
       </section>;
   }
-  return <section className={`py-2 text-center ${className}`}>
+  return <section className={`pb-2 text-center ${className}`}>
       <div className="flex flex-col items-center gap-2">
         <Button variant="cta" size="lg" className="w-auto mx-auto group px-6 sm:px-12 text-base sm:text-lg rounded-[10px] sm:rounded-xl sm:h-14">
           BOOK FREE CALL
