@@ -13,7 +13,7 @@ const CTASection = ({ variant = "primary", urgency = "LIMITED SPOTS", className 
       <section className={`py-16 text-center ${className}`}>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button variant="outline-accent" size="lg" className="w-auto">
-            CHECK AVAILABILITY
+            BOOK YOUR FREE FITNESS CALL
           </Button>
           <div className="flex items-center gap-2 text-accent/70">
             <div className="flex gap-1">
@@ -32,7 +32,7 @@ const CTASection = ({ variant = "primary", urgency = "LIMITED SPOTS", className 
     <section className={`pb-12 sm:py-12 text-center ${className}`}>
       <div className="flex flex-col items-center gap-6">
         <Button variant="cta" size="lg" className="w-auto mx-auto group px-6 sm:px-12 text-base sm:text-lg rounded-[10px] sm:rounded-xl sm:h-14">
-          APPLY NOW
+          BOOK YOUR FREE FITNESS CALL
           <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
         </Button>
         
