@@ -348,12 +348,11 @@ const TestimonialsSection = () => {
       {/* Lightbox Dialog */}
       <Dialog open={!!selectedImage} onOpenChange={open => !open && setSelectedImage(null)}>
         <DialogContent className="max-w-7xl w-[95vw] h-[95vh] p-0 border-0 bg-black/95">
-          <DialogClose className="absolute top-4 right-4 z-50 rounded-full bg-white/10 backdrop-blur-sm p-2 hover:bg-white/20 transition-colors">
-            <X className="h-6 w-6 text-white" />
-          </DialogClose>
-          
           {selectedImage && <div className="relative w-full h-full flex items-center justify-center p-8">
               <div className="relative max-w-full max-h-full">
+                <DialogClose className="absolute -top-12 right-0 z-50 rounded-full bg-white/10 backdrop-blur-sm p-2 hover:bg-white/20 transition-colors">
+                  <X className="h-6 w-6 text-white" />
+                </DialogClose>
                 <img src={selectedImage.src} alt={`${selectedImage.name} transformation - full view`} className="max-w-full max-h-[85vh] object-contain rounded-lg animate-scale-in" />
                 
                 {/* Image Info Overlay */}
