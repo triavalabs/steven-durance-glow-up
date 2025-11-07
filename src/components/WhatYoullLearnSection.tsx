@@ -74,7 +74,7 @@ const WhatYoullLearnSection = () => {
                 href="#apply"
                 className="block w-full h-[52px] bg-gradient-accent text-accent-foreground font-bold text-base rounded-[10px] shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.2)] transition-all duration-300 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
               >
-                APPLY NOW
+                BOOK FREE CALL
               </a>
             </div>
 
