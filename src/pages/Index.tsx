@@ -12,25 +12,15 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background text-foreground antialiased space-y-0 md:space-y-0">
       <HeroSection />
-      <div className="pb-0 md:pb-0">
-        <WhatYoullLearnSection />
-      </div>
+      <WhatYoullLearnSection />
       <CTASection variant="secondary" urgency="ONLY 3 SPOTS LEFT" className="bg-gradient-card" />
-      <div className="pb-0 md:pb-0">
-        <StevensStorySection />
-      </div>
+      <StevensStorySection />
       <CTASection urgency="FINAL CALL" className="bg-gradient-subtle" />
-      <div className="pb-0 md:pb-0">
-        <TestimonialsSection />
-      </div>
+      <TestimonialsSection />
       <CTASection urgency="LIMITED TIME" className="bg-gradient-card" />
-      <div className="pb-0 md:pb-0">
-        <ValuePropositionSection />
-      </div>
+      <ValuePropositionSection />
       <CTASection urgency="ACT NOW" className="bg-gradient-subtle" />
-      <div className="pb-0 md:pb-0">
-        <FAQSection />
-      </div>
+      <FAQSection />
       <FinalCTASection />
       <StickyCTABanner />
     </main>
