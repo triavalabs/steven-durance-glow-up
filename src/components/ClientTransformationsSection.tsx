@@ -144,8 +144,8 @@ export default function ClientTransformationsSection({
 
               {/* Verified Badge (top-right) */}
               {item.verified && (
-                <div className="absolute top-2 right-2 bg-primary text-primary-foreground rounded-full p-1.5 shadow-lg">
-                  <Check className="w-3 h-3" strokeWidth={3} />
+                <div className="absolute top-2 right-2 bg-white/10 backdrop-blur-sm rounded-full p-1.5 border border-white/20">
+                  <Check className="w-3 h-3 text-white/60" strokeWidth={3} />
                 </div>
               )}
 
