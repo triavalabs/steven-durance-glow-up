@@ -216,10 +216,6 @@ export default function ClientTransformationsSection({
                 </div>
               </div>
 
-              {/* Counter */}
-              <div className="absolute bottom-24 left-1/2 -translate-x-1/2 text-white/60 text-sm">
-                {selectedIndex !== null && `${selectedIndex + 1} / ${displayItems.length}`}
-              </div>
             </div>
           )}
         </DialogContent>
