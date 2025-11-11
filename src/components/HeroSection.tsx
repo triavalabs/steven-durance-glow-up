@@ -106,7 +106,7 @@ const HeroSection = () => {
           <div className="flex flex-col md:flex-row gap-6 justify-center mb-8 md:mb-12 animate-fade-in-up" style={{
           animationDelay: "0.6s"
         }}>
-            <Button variant="cta" size="xxl" className="shadow-glow" aria-label="Book free strategy call with Steven Durance">
+            <Button variant="cta" size="xxl" className="shadow-glow" aria-label="Book free strategy call with Steven Durance" onClick={() => window.open('https://app.gohighlevel.com/v2/preview/54pAqAfa3kAh5sarTHNp', '_blank')}>
               Find Your Plan
             </Button>
           </div>
