@@ -197,7 +197,7 @@ export default function ClientTransformationsSection({
               )}
 
               {/* Image */}
-              <div className="relative w-full max-h-[80vh] flex items-center justify-center p-8 bg-neutral-900">
+              <div className="relative w-full max-h-[80vh] flex items-center justify-center pt-4 px-8 pb-2 bg-neutral-900">
                 <div className="relative">
                   <img
                     src={selectedItem.imageUrl}
