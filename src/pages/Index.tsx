@@ -14,8 +14,8 @@ const Index = () => {
       <CTASection variant="secondary" urgency="ONLY 3 SPOTS LEFT" className="bg-gradient-card" />
       <StevensStorySection className="my-0 py-0" />
       <CTASection urgency="FINAL CALL" className="bg-gradient-subtle" />
-      <CTASection urgency="LIMITED TIME" className="bg-gradient-card" />
       <ClientTransformationsSection />
+      <CTASection urgency="LIMITED TIME" className="bg-gradient-card" />
       <ValuePropositionSection />
       <CTASection urgency="ACT NOW" className="bg-gradient-subtle" />
       <FAQSection />
