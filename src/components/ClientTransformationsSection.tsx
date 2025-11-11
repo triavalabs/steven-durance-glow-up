@@ -197,13 +197,17 @@ export default function ClientTransformationsSection({
               )}
 
               {/* Image */}
-              <div className="relative w-full max-h-[80vh] flex items-center justify-center p-8">
-                <img
-                  src={selectedItem.imageUrl}
-                  alt={`${selectedItem.clientName} — ${selectedItem.duration} transformation`}
-                  className="max-w-full max-h-full object-contain"
-                  onContextMenu={(e) => e.preventDefault()}
-                />
+              <div className="relative w-full max-h-[80vh] flex items-center justify-center p-8 bg-neutral-900">
+                <div className="relative">
+                  <img
+                    src={selectedItem.imageUrl}
+                    alt={`${selectedItem.clientName} — ${selectedItem.duration} transformation`}
+                    className="max-w-full max-h-full object-contain"
+                    onContextMenu={(e) => e.preventDefault()}
+                  />
+                  {/* Vignette to blend white edges */}
+                  <div className="absolute inset-0 shadow-[inset_0_0_60px_30px_rgba(0,0,0,0.6)] pointer-events-none" />
+                </div>
               </div>
 
               {/* Caption */}
