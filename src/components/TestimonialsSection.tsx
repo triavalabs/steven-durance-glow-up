@@ -3,158 +3,24 @@ import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, type CarouselApi } from "@/components/ui/carousel";
 
-// Import transformation images
-import jayTransform from "@/assets/transformations/jay-transformation.png";
-import eddieTransform from "@/assets/transformations/eddie-transformation.png";
-import chrisTransform from "@/assets/transformations/chris-transformation.jpg";
-import danielTransform from "@/assets/transformations/daniel-transformation.jpg";
-import mattTransform from "@/assets/transformations/matt-transformation.png";
-import matt2Transform from "@/assets/transformations/matt2-transformation.png";
-import anonTransform from "@/assets/transformations/anon-transformation.jpg";
-import anonbTransform from "@/assets/transformations/anonb-transformation.jpg";
-import anoncTransform from "@/assets/transformations/anonc-transformation.jpg";
-import anthonyTransform from "@/assets/transformations/anthony-transformation.png";
-import charlieTransform from "@/assets/transformations/charlie-transformation.jpg";
-import ericTransform from "@/assets/transformations/eric-transformation.png";
-import graysonTransform from "@/assets/transformations/grayson-transformation.jpg";
-import igoTransform from "@/assets/transformations/igo-transformation.jpg";
-import matthewTransform from "@/assets/transformations/matthew-transformation.jpg";
-import nateTransform from "@/assets/transformations/nate-transformation.png";
-import nealTransform from "@/assets/transformations/neal-transformation.jpg";
-import nickTransform from "@/assets/transformations/nick-transformation.jpg";
-import nickbTransform from "@/assets/transformations/nickb-transformation.jpg";
-import rachelTransform from "@/assets/transformations/rachel-transformation.jpg";
-import russelTransform from "@/assets/transformations/russel-transformation.jpg";
-import stevenTransform from "@/assets/transformations/steven-transformation.jpg";
-import thaiTransform from "@/assets/transformations/thai-transformation.png";
-import toriTransform from "@/assets/transformations/tori-transformation.png";
-import ericsTransform from "@/assets/transformations/erics-transformation.jpg";
-const testimonials = [{
-  name: "Steven",
-  transformationImage: stevenTransform,
-  duration: "4 MONTHS",
-  verified: true
-}, {
-  name: "Jay",
-  transformationImage: jayTransform,
-  duration: "6 MONTHS",
-  verified: true
-}, {
-  name: "Eddie",
-  transformationImage: eddieTransform,
-  duration: "6 MONTHS",
-  verified: true
-}, {
-  name: "Chris",
-  transformationImage: chrisTransform,
-  duration: "6 MONTHS",
-  verified: true
-}, {
-  name: "Daniel",
-  transformationImage: danielTransform,
-  duration: "6 MONTHS",
-  verified: true
-}, {
-  name: "Matt",
-  transformationImage: mattTransform,
-  duration: "6 MONTHS",
-  verified: true
-}, {
-  name: "Matt",
-  transformationImage: matt2Transform,
-  duration: "6 MONTHS",
-  verified: true
-}, {
-  name: "Anon",
-  transformationImage: anonTransform,
-  duration: "4 MONTHS",
-  verified: true
-}, {
-  name: "Anon B",
-  transformationImage: anonbTransform,
-  duration: "2.5 MONTHS",
-  verified: true
-}, {
-  name: "Anon C",
-  transformationImage: anoncTransform,
-  duration: "5 MONTHS",
-  verified: true
-}, {
-  name: "Tori",
-  transformationImage: toriTransform,
-  duration: "4 MONTHS",
-  verified: true
-}, {
-  name: "Anthony",
-  transformationImage: anthonyTransform,
-  duration: "4.5 MONTHS",
-  verified: true
-}, {
-  name: "Charlie",
-  transformationImage: charlieTransform,
-  duration: "3.5 MONTHS",
-  verified: true
-}, {
-  name: "Eric",
-  transformationImage: ericTransform,
-  duration: "3 MONTHS",
-  verified: true
-}, {
-  name: "Eric S",
-  transformationImage: ericsTransform,
-  duration: "4 MONTHS",
-  verified: true
-}, {
-  name: "Grayson",
-  transformationImage: graysonTransform,
-  duration: "8 WEEKS",
-  verified: true
-}, {
-  name: "Igo",
-  transformationImage: igoTransform,
-  duration: "4 MONTHS",
-  verified: true
-}, {
-  name: "Matthew",
-  transformationImage: matthewTransform,
-  duration: "6 MONTHS",
-  verified: true
-}, {
-  name: "Nate",
-  transformationImage: nateTransform,
-  duration: "6 MONTHS",
-  verified: true
-}, {
-  name: "Neal",
-  transformationImage: nealTransform,
-  duration: "3 MONTHS",
-  verified: true
-}, {
-  name: "Nick B",
-  transformationImage: nickbTransform,
-  duration: "4 MONTHS",
-  verified: true
-}, {
-  name: "Nick",
-  transformationImage: nickTransform,
-  duration: "3 MONTHS",
-  verified: true
-}, {
-  name: "Rachel",
-  transformationImage: rachelTransform,
-  duration: "3 MONTHS",
-  verified: true
-}, {
-  name: "Russell",
-  transformationImage: russelTransform,
-  duration: "5 MONTHS",
-  verified: true
-}, {
-  name: "Thai",
-  transformationImage: thaiTransform,
-  duration: "6 MONTHS",
-  verified: true
-}];
+// Add new transformation images here
+// Example:
+// import newTransform from "@/assets/transformations/new-transformation.jpg";
+
+const testimonials: Array<{
+  name: string;
+  transformationImage: string;
+  duration: string;
+  verified: boolean;
+}> = [];
+
+// When you have new transformation images, add them to the array above following this format:
+// {
+//   name: "Client Name",
+//   transformationImage: newTransform,
+//   duration: "X MONTHS",
+//   verified: true
+// }
 const TestimonialsSection = () => {
   const [selectedImage, setSelectedImage] = useState<{
     src: string;
