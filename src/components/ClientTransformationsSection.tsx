@@ -115,7 +115,7 @@ export default function ClientTransformationsSection({
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 [&>*:nth-child(25)]:md:col-start-2 [&>*:nth-child(25)]:lg:col-start-2">
           {displayItems.map((item, index) => (
             <button
               key={index}
