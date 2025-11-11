@@ -127,7 +127,7 @@ export default function ClientTransformationsSection({
               <img
                 src={item.imageUrl}
                 alt={`${item.clientName} — ${item.duration} transformation`}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-300 scale-105 group-hover:scale-110"
                 loading="lazy"
               />
 
