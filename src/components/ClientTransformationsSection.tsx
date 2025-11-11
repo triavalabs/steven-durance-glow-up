@@ -132,7 +132,7 @@ export default function ClientTransformationsSection({
               />
 
               {/* Vignette overlay to blend white edges */}
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/20 pointer-events-none" />
+              <div className="absolute inset-0 shadow-[inset_0_0_20px_10px_rgba(0,0,0,0.3)] pointer-events-none" />
 
               {/* Overlay on hover */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
