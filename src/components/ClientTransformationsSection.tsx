@@ -120,7 +120,7 @@ export default function ClientTransformationsSection({
             <button
               key={index}
               onClick={() => openLightbox(index)}
-              className="relative aspect-square overflow-hidden rounded-lg group cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              className="relative aspect-square overflow-hidden rounded-lg group cursor-pointer bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               aria-label={`${item.clientName} — ${item.duration} transformation`}
             >
               {/* Image */}
@@ -130,6 +130,9 @@ export default function ClientTransformationsSection({
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
               />
+
+              {/* Vignette overlay to blend white edges */}
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/20 pointer-events-none" />
 
               {/* Overlay on hover */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
