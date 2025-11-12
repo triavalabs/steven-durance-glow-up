@@ -71,7 +71,7 @@ const FinalCTASection = () => {
           
           {/* Footer Credit */}
           <div className="mt-6 mb-20 text-center">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-foreground">
               Website automation, branding, and design — powered by{" "}
               <a 
                 href="https://www.pixelcloud9.com" 
