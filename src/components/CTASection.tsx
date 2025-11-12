@@ -18,7 +18,7 @@ const CTASection = ({
             size="lg" 
             className="w-auto"
             aria-label="Book free strategy call with Steven Durance"
-            onClick={() => window.open('https://app.gohighlevel.com/v2/preview/54pAqAfa3kAh5sarTHNp', '_blank')}
+            onClick={() => window.open('https://funnels.stevendurance.com/book', '_blank')}
           >
             Find Your Plan
           </Button>
@@ -44,7 +44,7 @@ const CTASection = ({
           size="lg" 
           className="w-auto mx-auto group px-6 sm:px-12 text-base sm:text-lg rounded-[10px] sm:rounded-xl sm:h-14"
           aria-label="Book free strategy call with Steven Durance"
-          onClick={() => window.open('https://app.gohighlevel.com/v2/preview/54pAqAfa3kAh5sarTHNp', '_blank')}
+          onClick={() => window.open('https://funnels.stevendurance.com/book', '_blank')}
         >
           Find Your Plan
           <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />

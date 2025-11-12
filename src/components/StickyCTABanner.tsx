@@ -29,7 +29,7 @@ const StickyCTABanner = () => {
               variant="secondary" 
               className="bg-background/95 text-foreground hover:bg-background font-bold shadow-lg text-xs md:text-sm"
               aria-label="Book free strategy call with Steven Durance"
-              onClick={() => window.open('https://app.gohighlevel.com/v2/preview/54pAqAfa3kAh5sarTHNp', '_blank')}
+              onClick={() => window.open('https://funnels.stevendurance.com/book', '_blank')}
             >
               Find Your Plan
             </Button>

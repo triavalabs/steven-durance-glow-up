@@ -36,7 +36,7 @@ const FinalCTASection = () => {
           <div className="animate-fade-in-up" style={{
           animationDelay: "0.3s"
         }}>
-            <Button variant="hero" size="xl" className="group mb-8 text-base md:text-lg px-4 md:px-12 py-4 md:py-6" onClick={() => window.open('https://app.gohighlevel.com/v2/preview/54pAqAfa3kAh5sarTHNp', '_blank')}>
+            <Button variant="hero" size="xl" className="group mb-8 text-base md:text-lg px-4 md:px-12 py-4 md:py-6" onClick={() => window.open('https://funnels.stevendurance.com/book', '_blank')}>
               Find Your Plan
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </Button>
