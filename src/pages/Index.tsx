@@ -7,6 +7,7 @@ import FinalCTASection from "@/components/FinalCTASection";
 import StickyCTABanner from "@/components/StickyCTABanner";
 import CTASection from "@/components/CTASection";
 import ClientTransformationsSection from "@/components/ClientTransformationsSection";
+import Footer from "@/components/Footer";
 const Index = () => {
   return <main className="min-h-screen bg-background text-foreground antialiased space-y-0 md:space-y-0">
       <HeroSection />
@@ -20,6 +21,7 @@ const Index = () => {
       <CTASection urgency="ACT NOW" className="bg-gradient-subtle" />
       <FAQSection />
       <FinalCTASection />
+      <Footer />
       <StickyCTABanner />
     </main>;
 };
